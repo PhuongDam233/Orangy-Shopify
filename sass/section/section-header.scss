@@ -1,0 +1,15 @@
+.header {
+  height: var(--height-header);
+  background-color: var(--white-cl);
+  &__heading {
+    &-link {
+      .h2 {
+        font-size: 3.2rem;
+        line-height: 2.4rem;
+        color: var(--black-cl);
+        font-family: lm;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

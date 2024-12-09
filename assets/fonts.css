@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "pm";
+  src: url("../assets/Poppins-Medium.woff2") format("woff2"),
+    url("../assets/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "pr";
+  src: url("../assets/Poppins-Regular.woff2") format("woff2"),
+    url("../assets/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "pb";
+  src: url("../assets/Poppins-Bold.woff2") format("woff2"),
+    url("../assets/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "lr";
+  src: url("../assets/Lora-Regular.woff2") format("woff2"),
+    url("../assets/Lora-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "lm";
+  src: url("../assets/Lora-Medium.woff2") format("woff2"),
+    url("../assets/Lora-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
