@@ -1,0 +1,38 @@
+.announcement-bar {
+  height: var(--height-announcement-bar);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  &:nth-child(2) {
+    justify-content: flex-end;
+  }
+  &__message {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-family: pr;
+  }
+  .slider-buttons {
+    .slider-button {
+      // display: none;
+    }
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .announcement-bar {
+    &__message {
+      .adress {
+        width: 100%;
+        order: 1;
+      }
+      .number {
+        width: 100%;
+        order: 2;
+      }
+    }
+    .slider-buttons {
+      .slider-button {
+        // display: initial;
+      }
+    }
+  }
+}
