@@ -15,14 +15,19 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "heading": "EMBRACE VISION"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "heading": "Clever products for every corner "
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "explore now",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
@@ -31,14 +36,11 @@
           }
         }
       },
-      "block_order": [
-        "heading",
-        "button"
-      ],
+      "block_order": ["heading", "button"],
       "settings": {
-        "image_overlay_opacity": 40,
+        "image_overlay_opacity": 0,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-3",
@@ -104,19 +106,11 @@
           }
         }
       },
-      "block_order": [
-        "faq_dbLp8V",
-        "faq_f6ighr",
-        "faq_AFEzUK"
-      ],
+      "block_order": ["faq_dbLp8V", "faq_f6ighr", "faq_AFEzUK"],
       "settings": {
         "heading-title": "FAQ on Design & Development"
       }
     }
   },
-  "order": [
-    "image_banner",
-    "featured_collection",
-    "section_accordion_YWDWmG"
-  ]
+  "order": ["image_banner", "featured_collection", "section_accordion_YWDWmG"]
 }

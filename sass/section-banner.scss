@@ -1,0 +1,20 @@
+.banner__box.content-container.content-container--full-width-mobile.color-scheme-3.gradient {
+  max-width: 350px;
+  h2 {
+    font-family: pr;
+    font-size: var(--fs-h1);
+    line-height: var(--lh1-h1);
+  }
+  .banner__text {
+    font-family: pr;
+    color: var(--white-cl);
+    font-size: var(--fs-p-hero);
+    line-height: var(--lh-p-hero);
+  }
+  .banner__buttons {
+    text-transform: uppercase;
+    font-family: pm;
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+  }
+}
