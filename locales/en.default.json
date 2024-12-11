@@ -259,11 +259,12 @@
     "contact": {
       "form": {
         "title": "Contact form",
-        "name": "Name",
-        "email": "Email",
-        "phone": "Phone number",
-        "comment": "Comment",
-        "send": "Send",
+        "name": "Name *",
+        "email": "Email ",
+        "phone": "Phone *",
+        "address": "Address ",
+        "comment": "Example: I want to buy 6 chairs and a table brand Oda ottoman...",
+        "send": "Submit",
         "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
         "error_heading": "Please adjust the following:"
       }

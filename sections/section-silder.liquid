@@ -1,0 +1,94 @@
+{{"lib.css" | asset_url |  stylesheet_tag}}
+
+<section class="scslider">
+    <div class="page-width section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}">
+<h2 class="heading">
+    Discover unique items
+</h2>
+
+  <div class="slider__list swiper">
+    <div class="swiper-wrapper">
+            <!-- item 1 -->
+            {% for block in section.blocks %}
+            <div class="article__list-item swiper-slide">
+                    {% if block.type =="product" %} 
+                        <div class="imgwrap">
+                          {% comment %} <img src="./img/items-1.jpg" alt="items-1" class="imgwrap" /> {% endcomment %}
+                        </div>
+                        <div class="content">
+                          <span class="label textlabel">{{ block.settings.product.title }}</span>
+                          <p class="name">Releve platter</p>
+                          <div class="price">$699.00</div>
+                        </div>
+                    {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+          </div>
+
+    </div>
+</section>
+
+<script src="{{"swiper-bundle.min.js" | asset_url}}" async></script>
+<script>
+    Window.addEvenListener("DOMContentLoaded" , () => {
+    var swiper = new Swiper(".slider__list", {
+    slidesPerView: 4,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      350: {
+        slidesPerView: 1.5,
+        spaceBetween: 48,
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      767: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+    },
+  });
+    } )
+</script>
+{% schema %}
+{
+    "name": "Slider",
+    "class": "section",
+    "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [{
+    "type": "number",
+    "id": "number-slider-desktop",
+    "label": "Number of sliders (Desktop)"
+  }],
+  "blocks": [{
+    "name": "Product",
+    "type": "product",
+    "settings": [{
+        "type": "product",
+        "label": "Product",
+        "id": "product"
+    },
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+    }]
+  }],
+  "presets": [
+    {
+      "name": "Slider"
+    }
+  ]
+}
+
+{% endschema %}
