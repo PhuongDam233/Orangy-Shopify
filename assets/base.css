@@ -130,7 +130,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
 
   .page-width--narrow {
-    max-width: 72.6rem;
+    /* max-width: 72.6rem; */
     padding: 0;
   }
 
@@ -3706,6 +3706,7 @@ details-disclosure > details {
   --white-cl: #ffffff;
   --background-contact-cl: #f6f2ee;
   --background-popup-cl: #14141436;
+  --border-bottom-accordion-cl: #ededed;
 
   /* font size */
   --fs-h1: 7.2rem;
