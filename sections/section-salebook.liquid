@@ -1,0 +1,107 @@
+{{ 'section-salebook.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="scsalebook">
+<div class="page-width section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}" >
+  <div class="container">
+    {% for block in section.blocks %}
+      {% comment %} Item 1 {% endcomment %}
+      {% if block.type == 'item-img' %}
+<div class="scsalebook__img">
+   {{ block.settings.image |image_url: width: 500|  image_tag }}
+</div>
+{% endif %}
+{% comment %} Item 2 {% endcomment %}
+      {% if block.type == 'item-main' %}
+<div class="scsalebook__img">
+   <div class="scsalebook__img-top">
+    <span>{{ block.settings.sale-desc}}</span>
+   </div>
+   <div class="scsalebook__img-bottom">
+    <span class="content">{{ block.settings.sale-title}}</span>
+    <span class="desc">{{ block.settings.sale-content}}</span>
+    <span class="time">{{ block.settings.sale-time}}</span>
+   </div>
+</div>
+{% endif %}
+
+     {% endfor %}
+  </div>
+  
+   </div>
+</section>
+
+
+{% schema  %}  
+ {"name": "Salebook",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "blocks": [{
+  "name": "Item image",
+	"type": "item-img",
+    "settings": [{
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image popup"
+        }]
+  },
+  {
+  "name": "Item sale",
+  "type": "item-main",
+  "settings": [{
+    "type": "color_background",
+    "id": "background",
+    "label": "Background",
+    "default": "#6e331a"
+  },
+  {
+     "type": "text",
+            "id": "sale-desc",
+            "label": "Sale desc",
+            "default": "Season Sale Collections"
+  },
+   {
+     "type": "text",
+            "id": "sale-title",
+            "label": "Sale title",
+            "default": " SALE 30% OFF"
+  },
+  {
+     "type": "text",
+            "id": "sale-content",
+            "label": "Sale content",
+            "default": "Save extra on our sale collection"
+  },
+  {
+     "type": "text",
+            "id": "sale-time",
+            "label": "Sale time",
+            "default": "*Runs until 14:00pm PST"
+  }
+]
+}
+
+],
+  "presets": [
+    {
+      "name": "Salebook"
+    }
+  ]
+  
+  }
+{% endschema %}

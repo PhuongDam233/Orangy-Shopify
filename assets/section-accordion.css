@@ -62,9 +62,6 @@
   overflow: hidden;
   transition: var(--duration);
 }
-.accordion .accordion__list-item .answer__title {
-  font-size: 1.8rem;
-}
 .accordion .accordion__list-item .answer__content {
   font-size: var(--fs-body);
   letter-spacing: var(lh--body);
