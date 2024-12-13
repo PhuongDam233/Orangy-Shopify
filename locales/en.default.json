@@ -263,8 +263,8 @@
         "email": "Email ",
         "phone": "Phone *",
         "address": "Address ",
-        "comment": "Example: I want to buy 6 chairs and a table brand Oda ottoman...",
-        "send": "Submit",
+        "comment": "Your massage",
+        "send": "Submit now",
         "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
         "error_heading": "Please adjust the following:"
       }

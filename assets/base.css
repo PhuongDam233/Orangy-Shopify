@@ -107,9 +107,9 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
     padding-right: 2rem;
   }
 
-  .page-width--narrow {
+  /* .page-width--narrow {
     padding: 0 9rem;
-  }
+  } */
 
   .page-width-desktop {
     padding: 0;
@@ -131,7 +131,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
   .page-width--narrow {
     /* max-width: 72.6rem; */
-    padding: 0;
+    /* padding: 0; */
   }
 
   .page-width-desktop {
@@ -3866,8 +3866,8 @@ body .container {
 
 @media screen and (max-width: 991.98px) {
   body .container {
-    padding-right: var(--gap);
-    padding-left: var(--gap);
+    /* padding-right: var(--gap);
+    padding-left: var(--gap); */
   }
 }
 

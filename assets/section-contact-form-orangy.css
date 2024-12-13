@@ -12,3 +12,30 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+.field {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact__button {
+  display: flex;
+  justify-content: center;
+}
+.contact__button .button {
+  height: var(--height-button);
+  font-size: var(--fs-textbtn);
+  line-height: var(--lh-textbtn);
+  letter-spacing: var(--ls-textbtn);
+  font-family: lm;
+  padding: 0 50px;
+  text-transform: uppercase;
+}
+
+.field:after,
+.select:after,
+.customer .field:after,
+.customer select:after,
+.localization-form__select:after {
+  content: none;
+}

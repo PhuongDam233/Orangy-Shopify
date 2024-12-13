@@ -117,6 +117,7 @@
         >
         <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
       </div>
+
        {% comment %} address {% endcomment %}
         <div class="field">
           <input
@@ -126,12 +127,12 @@
             id="ContactForm-address"
             name="contact[{{ 'templates.contact.form.address' | t }}]"
             value="{% if form.address %}{{ form.address }}{% elsif customer %}{{ customer.address }}{% endif %}"
-            placeholder="{{ 'templates.contact.form.name' | t }}"
+            placeholder="{{ 'templates.contact.form.address' | t }}"
           >
           <label class="field__label" for="ContactForm-address">{{ 'templates.contact.form.address' | t }}</label>
         </div>
-        </div>
-      {% comment %} text area {% endcomment %}
+      </div>
+      {% comment %} textarea {% endcomment %}
       <div class="field">
         <textarea
           rows="10"
@@ -146,7 +147,6 @@
           {{- 'templates.contact.form.comment' | t -}}
         </label>
       </div>
-      {% comment %} buttom {% endcomment %}
       <div class="contact__button">
         <button type="submit" class="button">
           {{ 'templates.contact.form.send' | t }}
