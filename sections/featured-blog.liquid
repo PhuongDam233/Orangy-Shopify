@@ -3,6 +3,8 @@
 {{ 'component-article-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-featured-blog.css' | asset_url | stylesheet_tag }}
 
+{{ 'section-blog.css' | asset_url | stylesheet_tag }}
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -25,12 +27,12 @@
   endif
 -%}
 <div class="blog color-{{ section.settings.color_scheme }} gradient{% if section.settings.heading == blank %} no-heading{% endif %}">
-  <div class="page-width-desktop isolate{% if posts_displayed < 3 %} page-width-tablet{% endif %} section-{{ section.id }}-padding">
+  <div class="page-width isolate{% if posts_displayed < 3 %} page-width-tablet{% endif %} section-{{ section.id }}-padding">
     {%- unless section.settings.heading == blank -%}
-      <div class="title-wrapper-with-link{% if posts_displayed > 2 %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
+      <div class=" title-wrapper-with-link{% if posts_displayed > 2 %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
         <h2
           id="SectionHeading-{{ section.id }}"
-          class="blog__title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          class="heading h2 blog__title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {% if settings.animations_reveal_on_scroll %}
             data-cascade
           {% endif %}
@@ -124,7 +126,7 @@
                   </div>
                   <div class="card__content">
                     <div class="card__information">
-                      <h3 class="card__heading h2">
+                      <h3 class="card__heading heading h3">
                         {{ 'sections.featured_blog.onboarding_title' | t }}
                       </h3>
                       <p class="article-card__excerpt rte-width">
@@ -138,7 +140,7 @@
           {%- endfor -%}
         {%- endif -%}
       </ul>
-      {%- if posts_exceed_limit -%}
+      {% comment %} {%- if posts_exceed_limit -%}
         <div class="slider-buttons{% if section.settings.post_limit < 3 %} medium-hide{% endif %}{% if section.settings.post_limit < 2 %} small-hide{% endif %}">
           <button
             type="button"
@@ -167,7 +169,7 @@
             </span>
           </button>
         </div>
-      {%- endif -%}
+      {%- endif -%} {% endcomment %}
     </slider-component>
 
     {%- if section.settings.show_view_all and section.settings.post_limit < section.settings.blog.articles_count -%}
@@ -243,7 +245,7 @@
       "min": 2,
       "max": 4,
       "step": 1,
-      "default": 3,
+      "default": 4,
       "label": "t:sections.featured-blog.settings.post_limit.label"
     },
     {
@@ -252,7 +254,7 @@
       "min": 1,
       "max": 4,
       "step": 1,
-      "default": 3,
+      "default": 4,
       "label": "t:sections.featured-blog.settings.columns_desktop.label"
     },
     {
@@ -272,7 +274,7 @@
     {
       "type": "checkbox",
       "id": "show_date",
-      "default": true,
+      "default": false,
       "label": "t:sections.featured-blog.settings.show_date.label"
     },
     {

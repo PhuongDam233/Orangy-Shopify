@@ -78,7 +78,8 @@
 /* base */
 
 .page-width {
-  max-width: var(--page-width);
+  /* max-width: var(--page-width); */
+  max-width: var(--max-width-container);
   margin: 0 auto;
 }
 
@@ -246,15 +247,13 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   font-weight: var(--font-body-weight);
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
 .h0,
 .h1,
-.h2,
-.h3,
 .h4,
 .h5 {
   font-family: var(--font-heading-family);
@@ -264,6 +263,20 @@ h5,
   color: rgb(var(--color-foreground));
   line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
   word-break: break-word;
+} */
+
+.heading {
+  color: var(--black-cl);
+  font-family: lr;
+  letter-spacing: var(--ls);
+}
+.h2 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh1-h2);
+}
+.h3 {
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
 }
 
 .hxxl {
@@ -1112,7 +1125,7 @@ summary::-webkit-details-marker {
 /* component-media */
 .media {
   display: block;
-  background-color: rgba(var(--color-foreground), 0.1);
+  background-color: var(--white-cl);
   position: relative;
   overflow: hidden;
 }
@@ -1133,7 +1146,7 @@ summary::-webkit-details-marker {
 }
 
 .media > img {
-  object-fit: cover;
+  /* object-fit: cover; */
   object-position: center center;
   transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -3698,7 +3711,7 @@ details-disclosure > details {
 :root {
   --max-width-page: 2560px;
   --max-width-container-fluid: 1920px;
-  --max-width-container: calc(1200px + calc(var(--gap) * 2));
+  --max-width-container: 1410px;
   --gap: 20px;
   --black-cl: #000000;
   --red-cl: #ee0000;

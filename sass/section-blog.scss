@@ -1,0 +1,64 @@
+.articles-wrapper {
+  --gap: 82px;
+  flex-wrap: nowrap;
+  column-gap: var(--gap);
+  .blog__post {
+    max-width: 291px;
+    width: 100%;
+    &:nth-child(even) {
+      .article-card-wrapper {
+        .card__content {
+          position: absolute;
+          bottom: 15%;
+        }
+      }
+    }
+    .article-card-wrapper {
+      .card__inner {
+        aspect-ratio: 291 / 421;
+        object-fit: cover;
+        position: relative;
+        max-width: 291px;
+        .article-card__image-wrapper {
+          width: 100%;
+          .media {
+            img {
+              object-fit: contain;
+            }
+          }
+        }
+      }
+      .card__content {
+        .card__information {
+          .card__heading {
+            color: var(--black-cl);
+            font-size: var(--fs-h3);
+            line-height: var(--lh-h3);
+            font-family: lr;
+            letter-spacing: var(--ls);
+          }
+          .article-card__excerpt {
+            color: var(--black-cl);
+            font-family: pr;
+            font-size: var(--fs-body);
+            line-height: var(--lh-body);
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1366.98px) {
+    --gap: 61px;
+  }
+  @media screen and (max-width: 1280.98px) {
+    --gap: 33px;
+  }
+  @media screen and (max-width: 1199.98px) {
+    --gap: 24px;
+  }
+  @media screen and (max-width: 991.98px) {
+    .card__inner {
+      aspect-ratio: 265 / 384;
+    }
+  }
+}
