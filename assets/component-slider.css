@@ -169,7 +169,7 @@ slider-component.slider-component-full-width {
 
   /* Fix to show some space at the end of our sliders in all browsers */
   .slider--desktop:after {
-    content: "";
+    /* content: ""; */
     width: 0;
     padding-left: 5rem;
     margin-left: calc(-1 * var(--grid-desktop-horizontal-spacing));
@@ -185,7 +185,7 @@ slider-component.slider-component-full-width {
   }
 
   .slider--desktop .slider__slide:first-child {
-    margin-left: var(--desktop-margin-left-first-item);
+    /* margin-left: var(--desktop-margin-left-first-item); */
     scroll-margin-left: var(--desktop-margin-left-first-item);
   }
 
