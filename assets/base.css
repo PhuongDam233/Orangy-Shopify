@@ -563,7 +563,7 @@ hr {
 
 .full-unstyled-link {
   text-decoration: none;
-  color: currentColor;
+  color: var(--black-cl);
   display: block;
 }
 
@@ -3715,6 +3715,7 @@ details-disclosure > details {
   --gap: 20px;
   --black-cl: #000000;
   --red-cl: #ee0000;
+  --red-bold-cl: #a42003;
   --blue-cl: #6495ed;
   --blue-green-cl: #054e4a;
   --grey-cl: #f4f4f4;
@@ -3992,8 +3993,28 @@ sup {
   grid-template-rows: repeat(2, 1fr);
 }
 
-.card__badge--new {
+.card__badge {
+  display: flex;
+  flex-direction: column;
   position: absolute;
+  left: 12px;
+  top: 12px;
+}
+
+.card__badge--fast {
+  color: var(--white-cl);
+  background-color: var(--black-cl);
+  font-family: pb;
+  font-size: var(--fs-texttag);
+  line-height: var(--lh-texttag);
+  width: fit-content;
+  font-size: var(--fs-textlabel);
+  line-height: var(--lh-textlabel-s);
+  left: 0.5rem;
+  top: 0.5rem;
+  padding: 3px 9px;
+}
+.card__badge--new {
   color: var(--white-cl);
   background-color: var(--blue-green-cl);
   font-family: pb;
@@ -4006,10 +4027,10 @@ sup {
   top: 0.5rem;
   padding: 3px 9px;
 }
-.card__badge--fast {
-  position: absolute;
+
+.card__badge--discount {
   color: var(--white-cl);
-  background-color: var(--black-cl);
+  background-color: var(--red-bold-cl);
   font-family: pb;
   font-size: var(--fs-texttag);
   line-height: var(--lh-texttag);
