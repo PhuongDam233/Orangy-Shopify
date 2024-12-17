@@ -1,15 +1,3 @@
-// $(document).ready(function () {
-//   $("ul.shopify-tabs > li").click(function () {
-//     var tab_id = $(this).attr("data-tab");
-
-//     $(this).parent().find("li").removeClass("active");
-//     $(".shopify-tab-content").removeClass("active");
-
-//     $(this).addClass("active");
-//     $("#" + tab_id).addClass("active");
-//   });
-// });
-
 // HANDLE TABS
 function handleTabsNew() {
   let tabs = document.querySelectorAll(".sctabs__tab-item"),

@@ -133,20 +133,28 @@
                 {{- 'products.product.sold_out' | t -}}
               </span>
             {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
-              <span
+              {% comment %} <span
                 id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
                 class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
               >
                 {{- 'products.product.on_sale' | t -}}
-              </span>
-
-              {%- elsif card_product.tags contains 'new' -%}
-              <span class="card__badge--new">{{ 'New' }}</span>
-
-              {%- elsif card_product.tags contains 'fast' -%}
-              <span class="card__badge--fast">{{ 'Selling Fast' }}</span> 
-
+              </span> {% endcomment %}
+           {% if card_product.tags contains 'discount' %}
+            <span class="card__badge--discount">{{ '-30%' }}</span>
+            {% endif %}
+            
             {%- endif -%}
+
+            {% if card_product.tags contains 'fast' %}
+            <span class="card__badge--fast">{{ 'Selling Fast' }}</span>
+            {% endif %}
+
+            {% if card_product.tags contains 'new' %}
+            <span class="card__badge--new">{{ 'New' }}</span>
+            {% endif %}
+
+          
+            
           </div>
         </div>
       </div>

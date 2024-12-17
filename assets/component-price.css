@@ -1,8 +1,9 @@
 .price {
-  font-size: 1.6rem;
-  letter-spacing: 0.1rem;
-  line-height: calc(1 + 0.5 / var(--font-body-scale));
-  color: rgb(var(--color-foreground));
+  font-size: var(--fs-price-sale);
+  line-height: var(--lh-price-product);
+  /* display: flex;
+  gap: 8px; */
+  color: var(--black-cl);
 }
 
 .price > * {
@@ -98,4 +99,8 @@
   margin-top: 0.2rem;
   text-transform: uppercase;
   color: rgba(var(--color-foreground), 0.7);
+}
+
+s.price-item.price-item--regular {
+  color: var(--red-cl);
 }

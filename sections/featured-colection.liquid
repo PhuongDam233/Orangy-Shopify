@@ -66,13 +66,13 @@
   >
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}">
       {%- if section.settings.title != blank -%}
-        <h2 class="title inline-richtext {{ section.settings.heading_size }} {{ section.settings.heading_alignment }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <h2 class="heading h2 title inline-richtext {{ section.settings.heading_size }} {{ section.settings.heading_alignment }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.title }}
         </h2>
         <ul class="shopify-tabs" >
             {% for block in section.blocks %}
           {% assign collection = collections[block.settings.collection] %}
-          <li data-tab="{{ forloop.index }}" class="sctabs__tab-item" >{{ block.settings.name-tab | default: collection.title }}</li>
+          <li data-tab="{{ forloop.index }}" class="sctabs__tab-item  {% if forloop.first == true %}active{% endif %}" >{{ block.settings.name-tab | default: collection.title }}</li>
         {% endfor %}
 
             </ul>
