@@ -3716,6 +3716,7 @@ details-disclosure > details {
   --black-cl: #000000;
   --red-cl: #ee0000;
   --blue-cl: #6495ed;
+  --blue-green-cl: #054e4a;
   --grey-cl: #f4f4f4;
   --white-cl: #ffffff;
   --brown-cl: #6e331a;
@@ -3971,4 +3972,51 @@ sub {
 sup {
   vertical-align: super;
   font-size: smaller;
+}
+/* col */
+.col {
+  display: grid;
+  gap: 10px;
+}
+.col.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.col.col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.col.col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.col.col-12 {
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.card__badge--new {
+  position: absolute;
+  color: var(--white-cl);
+  background-color: var(--blue-green-cl);
+  font-family: pb;
+  font-size: var(--fs-texttag);
+  line-height: var(--lh-texttag);
+  width: fit-content;
+  font-size: var(--fs-textlabel);
+  line-height: var(--lh-textlabel-s);
+  left: 0.5rem;
+  top: 0.5rem;
+  padding: 3px 9px;
+}
+.card__badge--fast {
+  position: absolute;
+  color: var(--white-cl);
+  background-color: var(--black-cl);
+  font-family: pb;
+  font-size: var(--fs-texttag);
+  line-height: var(--lh-texttag);
+  width: fit-content;
+  font-size: var(--fs-textlabel);
+  line-height: var(--lh-textlabel-s);
+  left: 0.5rem;
+  top: 0.5rem;
+  padding: 3px 9px;
 }

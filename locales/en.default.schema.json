@@ -742,6 +742,10 @@
           "label": "Heading",
           "default": "Our picks for you"
         },
+        "name-tab": {
+          "label": "Name Tab",
+          "default": "Your name tab"
+        },
         "description": {
           "label": "Description"
         },

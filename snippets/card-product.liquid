@@ -139,6 +139,13 @@
               >
                 {{- 'products.product.on_sale' | t -}}
               </span>
+
+              {%- elsif card_product.tags contains 'new' -%}
+              <span class="card__badge--new">{{ 'New' }}</span>
+
+              {%- elsif card_product.tags contains 'fast' -%}
+              <span class="card__badge--fast">{{ 'Selling Fast' }}</span> 
+
             {%- endif -%}
           </div>
         </div>
@@ -622,3 +629,4 @@
     </div>
   </div>
 {%- endif -%}
+
