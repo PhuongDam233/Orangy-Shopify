@@ -33,6 +33,7 @@
       justify-content: center;
       flex-direction: column;
       .content {
+        max-width: 238px;
         font-size: var(--fs-text-large);
         line-height: var(--lh-text-large);
         font-family: lr;
