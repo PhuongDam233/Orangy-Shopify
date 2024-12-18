@@ -274,6 +274,11 @@ h5,
   font-size: var(--fs-h2);
   line-height: var(--lh1-h2);
 }
+ .h2-large {
+    color: var(--white-cl);
+    font-size: var(--fs-text-large);
+    line-height: var(--lh-text-large);
+  }
 .h3 {
   font-size: var(--fs-h3);
   line-height: var(--lh-h3);
