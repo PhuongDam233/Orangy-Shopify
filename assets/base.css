@@ -274,11 +274,16 @@ h5,
   font-size: var(--fs-h2);
   line-height: var(--lh1-h2);
 }
- .h2-large {
-    color: var(--white-cl);
-    font-size: var(--fs-text-large);
-    line-height: var(--lh-text-large);
-  }
+.h2-s {
+  color: var(--black-cl);
+  font-size: var(--fs-text-s);
+  line-height: var(--lh-text-s);
+}
+.h2-large {
+  color: var(--white-cl);
+  font-size: var(--fs-text-large);
+  line-height: var(--lh-text-large);
+}
 .h3 {
   font-size: var(--fs-h3);
   line-height: var(--lh-h3);
@@ -3718,6 +3723,7 @@ details-disclosure > details {
   --max-width-container-fluid: 1920px;
   --max-width-container: 1410px;
   --gap: 20px;
+  --gray-l-cl: #d1ceca;
   --black-cl: #000000;
   --red-cl: #ee0000;
   --red-bold-cl: #a42003;
@@ -4045,4 +4051,26 @@ sup {
   left: 0.5rem;
   top: 0.5rem;
   padding: 3px 9px;
+}
+.btn {
+  text-transform: uppercase;
+  transition: var(--duration);
+  height: var(--height-button);
+  font-size: var(--fs-textbtn);
+  line-height: var(--lh-textbtn);
+  letter-spacing: var(--ls-textbtn);
+}
+.btnlink {
+  font-family: pm;
+  color: var(--black-cl);
+  padding: 0px 41px;
+  border: 1px solid var(--gray-l-cl);
+  display: flex;
+  align-items: center;
+}
+
+.btnlink:hover {
+  background-color: var(--gray-l-cl);
+  opacity: 0.8;
+  border: 1px solid var(--black-cl);
 }
