@@ -270,6 +270,10 @@ h5,
   font-family: lr;
   letter-spacing: var(--ls);
 }
+.h1 {
+  font-size: var(--fs-h1);
+  line-height: var(--lh1-h1);
+}
 .h2 {
   font-size: var(--fs-h2);
   line-height: var(--lh1-h2);
@@ -3715,6 +3719,51 @@ details-disclosure > details {
   100% {
     transform: translateX(100%) scaleX(0);
   }
+}
+/* font */
+@font-face {
+  font-family: "pm";
+  src: url("../assets/Poppins-Medium.woff2") format("woff2"),
+    url("../assets/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "pr";
+  src: url("../assets/Poppins-Regular.woff2") format("woff2"),
+    url("../assets/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "pb";
+  src: url("../assets/Poppins-Bold.woff2") format("woff2"),
+    url("../assets/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "lr";
+  src: url("../assets/Lora-Regular.woff2") format("woff2"),
+    url("../assets/Lora-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "lm";
+  src: url("../assets/Lora-Medium.woff2") format("woff2"),
+    url("../assets/Lora-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
 }
 
 /* Variables */

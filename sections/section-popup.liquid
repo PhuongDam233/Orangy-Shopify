@@ -1,4 +1,4 @@
-{{ 'popup.css' | asset_url | stylesheet_tag }}
+{{ 'section-popup.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'popup.js' | asset_url }}" defer="defer"></script>
 
 <div class="popup">
@@ -11,7 +11,7 @@
         {% endif %}
         {% if block.type == 'popup-desc' %}
         <div class="popup__inner-content">
-          <h1 class="heading border">
+          <h1 class="heading h1 border">
              {{ block.settings.popup-title }}
           </h1>
           <p class="desc border">
@@ -30,7 +30,9 @@
           <p class="textskip border">No thanks</p>
           </div>
         {% endif %}
-        
+        <div class="popup__inner-close closepopup">
+              {{- 'i-close.svg' | inline_asset_content -}}
+        </div>
        {% endfor %}
     </div>
 </div>
