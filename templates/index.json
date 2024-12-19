@@ -237,7 +237,7 @@
       "settings": {
         "heading": "Change the look of your house, change the perspective of others",
         "heading_size": "h1",
-        "blog": "",
+        "blog": "blog-demo-1",
         "post_limit": 4,
         "columns_desktop": 4,
         "color_scheme": "",
@@ -255,35 +255,147 @@
         "faq_dbLp8V": {
           "type": "FAQ",
           "settings": {
-            "title": "Your question",
-            "answer_content": "Your answer content"
+            "title": "How long does shipping take?",
+            "answer_content": "Your answer content. Your sales managers will go into the field feeling energized,  excited, and inspired. We are a full service business development group – we build strategies and systems."
           }
         },
         "faq_f6ighr": {
           "type": "FAQ",
           "settings": {
-            "title": "Your question",
-            "answer_content": "Your answer content"
+            "title": "Does my piece come in any packaging?",
+            "answer_content": "Yes, all our products come in protective and aesthetically pleasing packaging to ensure they arrive in perfect condition. Each product is securely wrapped, and we use eco-friendly materials whenever possible. Additionally, many of our products come in recyclable containers to support sustainability."
           }
         },
         "faq_AFEzUK": {
           "type": "FAQ",
           "settings": {
-            "title": "Your question",
-            "answer_content": "Your answer content"
+            "title": "Do you ship internationally?",
+            "answer_content": "Yes, we do ship internationally! We offer worldwide shipping to ensure customers around the globe can enjoy our products. Please note that shipping times and costs may vary depending on the destination country. International customers may also be subject to customs fees or import duties imposed by their country's customs authorities."
+          }
+        },
+        "faq_MqBTGL": {
+          "type": "FAQ",
+          "settings": {
+            "title": "What payment methods do you accept?",
+            "answer_content": "We accept a variety of payment methods to make your shopping experience convenient. These include credit cards (Visa, Mastercard, American Express), PayPal, and, in some regions, alternative payment methods such as Apple Pay or Google Pay. Rest assured, your payment information is secure and protected during the checkout process."
+          }
+        },
+        "faq_pDtYWP": {
+          "type": "FAQ",
+          "settings": {
+            "title": "What should I do if my order is not placed?",
+            "answer_content": "We’re sorry to hear that you’re unable to place an order. Please contact Customer Service and we will work on resolving the issue as quickly as possible"
           }
         }
       },
       "block_order": [
         "faq_dbLp8V",
         "faq_f6ighr",
-        "faq_AFEzUK"
+        "faq_AFEzUK",
+        "faq_MqBTGL",
+        "faq_pDtYWP"
       ],
       "settings": {
         "heading-title": "FAQ on Design & Development",
         "heading_alignment": "center",
         "padding_top": 55,
         "padding_bottom": 95
+      }
+    },
+    "section_banner_small_eH4LUQ": {
+      "type": "section-banner-small",
+      "blocks": {
+        "heading_Hzcg4n": {
+          "type": "heading",
+          "settings": {
+            "heading": "Elevate Your Home"
+          }
+        },
+        "text_Pedwrz": {
+          "type": "text",
+          "settings": {
+            "text": "Clever products for every corner",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Hzcg4n",
+        "text_Pedwrz"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/banner.jpg",
+        "image_2": "shopify://shop_images/banner-mob.jpg",
+        "image_overlay_opacity": 50,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "section_service_ddNUiL": {
+      "type": "section-service",
+      "blocks": {
+        "column_VdctVj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/support.svg",
+            "title": "Free & fast delivery",
+            "text": "<p>We offer free shipping with ground delivery to the lower 48 states.</p>",
+            "link_label": ""
+          }
+        },
+        "column_TJ4Cnj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/payment.svg",
+            "title": "Online support",
+            "text": "<p>Online Support24 hours a day, 7 days a week</p>",
+            "link_label": ""
+          }
+        },
+        "column_3eEqLR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/return.svg",
+            "title": "30 Days return",
+            "text": "<p>Exchange or return items free of charge within 30 days.</p>",
+            "link_label": ""
+          }
+        },
+        "column_xfLKj3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2qNXY4c4zzMkAP2CAafrsCVrDcx.svg",
+            "title": "Flexible payment",
+            "text": "<p>Pay conveniently using multiple credit cards for added flexibility.</p>",
+            "link_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_VdctVj",
+        "column_TJ4Cnj",
+        "column_3eEqLR",
+        "column_xfLKj3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -295,6 +407,8 @@
     "section_salebook_3AFJid",
     "contact_form_fd6kk3",
     "featured_blog_gCq3RW",
-    "section_accordion_YWDWmG"
+    "section_accordion_YWDWmG",
+    "section_banner_small_eH4LUQ",
+    "section_service_ddNUiL"
   ]
 }
