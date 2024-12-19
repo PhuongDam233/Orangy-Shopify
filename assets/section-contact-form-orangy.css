@@ -12,6 +12,9 @@
   margin-right: auto;
   margin-left: auto;
 }
+.contact form input {
+  height: 52px;
+}
 
 .field {
   flex-direction: column;

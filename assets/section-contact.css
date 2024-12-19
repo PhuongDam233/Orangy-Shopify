@@ -4,6 +4,7 @@
   max-height: 752px;
   min-height: 679px;
   overflow: hidden;
+  background-color: var(--background-contact-cl);
 }
 .contact .page-width {
   height: 100%;
@@ -12,7 +13,6 @@
   display: flex;
   position: relative;
   height: 100%;
-  background-color: var(--background-contact-cl);
 }
 .contact .contact-inner .contact_item.--left {
   width: 33.3333%;

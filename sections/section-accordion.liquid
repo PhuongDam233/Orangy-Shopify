@@ -18,7 +18,7 @@
 <section class="accordion">
   <div class="page-width section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}">
     <div class="textbox">
-            <h2 class=" heading inline-richtext {{ section.settings.heading_alignment }}">
+            <h2 class=" heading h2 inline-richtext {{ section.settings.heading_alignment }}">
               {{ section.settings.heading-title }}
             </h2>
     </div>
@@ -28,7 +28,7 @@
         <div class="accordion__list-item">
           
              <div class="question">
-              <h3>{{ block.settings.title }}</h3>
+              <h3 class="heading --h3-large">{{ block.settings.title }}</h3>
               <div class="icon"><span></span></div>
             </div>
 

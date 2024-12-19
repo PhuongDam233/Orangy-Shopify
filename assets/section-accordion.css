@@ -4,12 +4,6 @@
 .accordion .textbox {
   margin-bottom: 60px;
 }
-.accordion .textbox .heading {
-  font-size: var(--fs-h2);
-  line-height: var(--lh1-h2);
-  font-family: lr;
-  letter-spacing: var(--ls);
-}
 .accordion .accordion__list-item {
   transition: var(--duration);
   border-bottom: 1px solid var(--border-bottom-accordion-cl);
@@ -63,8 +57,10 @@
   transition: var(--duration);
 }
 .accordion .accordion__list-item .answer__content {
+  color: var(--black-cl);
+  line-height: var(--lh-body);
   font-size: var(--fs-body);
-  letter-spacing: var(lh--body);
+  letter-spacing: var(--ls);
 }
 
 @media screen and (max-width: 575.98px) {

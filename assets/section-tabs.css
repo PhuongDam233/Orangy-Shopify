@@ -3,7 +3,7 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2, 1fr);
   column-gap: 10px;
-  row-gap: 38px;
+  row-gap: 50px;
 }
 .section-tabs .shopify-tab-content li:nth-child(1) {
   grid-area: 1/1/2/7;

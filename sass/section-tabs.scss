@@ -4,7 +4,7 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
     column-gap: 10px;
-    row-gap: 38px;
+    row-gap: 50px;
     li {
       // &:nth-child(1) {
       //   width: calc(50% - var(--grid-desktop-horizontal-spacing) * 3 / 4);

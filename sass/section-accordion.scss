@@ -2,12 +2,6 @@
   padding-bottom: 100px;
   .textbox {
     margin-bottom: 60px;
-    .heading {
-      font-size: var(--fs-h2);
-      line-height: var(--lh1-h2);
-      font-family: lr;
-      letter-spacing: var(--ls);
-    }
   }
   .accordion__list-item {
     &.--active {
@@ -64,8 +58,10 @@
       overflow: hidden;
       transition: var(--duration);
       &__content {
+        color: var(--black-cl);
+        line-height: var(--lh-body);
         font-size: var(--fs-body);
-        letter-spacing: var(lh--body);
+        letter-spacing: var(--ls);
       }
     }
   }
