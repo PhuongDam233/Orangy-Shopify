@@ -15,7 +15,6 @@
       "type": "announcement-bar",
       "blocks": {
         "announcement-bar-0": {
-          "id": "bar-0",
           "type": "announcement",
           "settings": {
             "text": "(+84) 12 34 5678",
@@ -24,14 +23,16 @@
         },
         "announcement-bar-1": {
           "type": "announcement",
-          "id": "bar-1",
           "settings": {
             "text": "78 Trung Kinh, Yen Hoa, Cau Giay, Hanoi",
             "link": ""
           }
         }
       },
-      "block_order": ["announcement-bar-0", "announcement-bar-1"],
+      "block_order": [
+        "announcement-bar-0",
+        "announcement-bar-1"
+      ],
       "settings": {
         "color_scheme": "scheme-4",
         "show_line_separator": true,
@@ -60,27 +61,10 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "section_popup_awdcL4": {
-      "type": "section-popup",
-      "blocks": {
-        "popup_img_aEHRrB": {
-          "type": "popup-img",
-          "settings": {
-            "image": "shopify://shop_images/popup.jpg"
-          }
-        },
-        "popup_desc_xjhHBg": {
-          "type": "popup-desc",
-          "settings": {
-            "popup-title": "Popup title",
-            "popup-content": "Popup content"
-          }
-        }
-      },
-      "block_order": ["popup_img_aEHRrB", "popup_desc_xjhHBg"],
-      "settings": {}
     }
   },
-  "order": ["announcement-bar", "header", "section_popup_awdcL4"]
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
 }

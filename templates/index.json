@@ -15,13 +15,8 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "EMBRACE VISION"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "heading": "Clever products for every corner "
+            "heading": "EMBRACE VISION",
+            "heading_size": "hxxl"
           }
         },
         "button": {
@@ -36,7 +31,10 @@
           }
         }
       },
-      "block_order": ["heading", "button"],
+      "block_order": [
+        "heading",
+        "button"
+      ],
       "settings": {
         "image_overlay_opacity": 0,
         "image_height": "large",
@@ -50,32 +48,210 @@
         "show_text_below": false
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "featured_colection_hMBKR7": {
+      "type": "featured-colection",
+      "blocks": {
+        "tab_ygzc8b": {
+          "type": "tab",
+          "settings": {
+            "collection": "demo-tabs-section",
+            "products_to_show": 6,
+            "columns_desktop": 4,
+            "name-tab": "Seating",
+            "image_ratio": "adapt",
+            "image_shape": "default",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "description": ""
+          }
+        },
+        "tab_AmGYQW": {
+          "type": "tab",
+          "settings": {
+            "collection": "demo-tabs-section-2",
+            "products_to_show": 6,
+            "columns_desktop": 4,
+            "name-tab": "Table",
+            "image_ratio": "adapt",
+            "image_shape": "default",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "description": ""
+          }
+        },
+        "tab_Jm83Cq": {
+          "type": "tab",
+          "settings": {
+            "collection": "dema-tabs-section-3",
+            "products_to_show": 6,
+            "columns_desktop": 4,
+            "name-tab": "Storage",
+            "image_ratio": "adapt",
+            "image_shape": "default",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "description": ""
+          }
+        },
+        "tab_zctKUk": {
+          "type": "tab",
+          "settings": {
+            "collection": "dema-tabs-section-4",
+            "products_to_show": 6,
+            "columns_desktop": 4,
+            "name-tab": "Lighting",
+            "image_ratio": "adapt",
+            "image_shape": "default",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "description": ""
+          }
+        },
+        "tab_rUDXFX": {
+          "type": "tab",
+          "settings": {
+            "collection": "demo-tabs-section-2",
+            "products_to_show": 6,
+            "columns_desktop": 4,
+            "name-tab": "Decor",
+            "image_ratio": "adapt",
+            "image_shape": "default",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_ygzc8b",
+        "tab_AmGYQW",
+        "tab_Jm83Cq",
+        "tab_zctKUk",
+        "tab_rUDXFX"
+      ],
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
+        "title": "Our picks for you",
+        "heading_size": "h1",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
+        "full_width": true,
+        "show_view_all": false,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
+        "color_scheme": "",
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
+<<<<<<< HEAD
         "padding_top": 108,
         "padding_bottom": 0
+=======
+        "padding_top": 36,
+        "padding_bottom": 36
+>>>>>>> c5499ee48fed95e7816ec5d9ea2c1021d6510501
+      }
+    },
+    "featured_lists_product_7JyT8a": {
+      "type": "featured-lists-product",
+      "settings": {
+        "title": "Discover unique items",
+        "heading_alignment": "center",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "demo-product",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_marquee_animation_ytB64h": {
+      "type": "section-marquee-animation",
+      "settings": {
+        "text": "FIND INSPRATION",
+        "text2": "*",
+        "colorBackground": "#ffffff",
+        "colorText": "#000000",
+        "link": ""
+      }
+    },
+    "section_salebook_3AFJid": {
+      "type": "section-salebook",
+      "blocks": {
+        "item_img_8JmhqW": {
+          "type": "item-img",
+          "settings": {
+            "image": "shopify://shop_images/sale-1.jpg"
+          }
+        },
+        "item_main_4ggXA9": {
+          "type": "item-main",
+          "settings": {
+            "background": "#6e331a",
+            "sale-desc": "Season Sale Collections",
+            "sale-title": "SALE 30% OFF",
+            "sale-content": "Save extra on our sale collection",
+            "sale-time": "*Runs until 14:00pm PST"
+          }
+        },
+        "item_img_ypqfcW": {
+          "type": "item-img",
+          "settings": {
+            "image": "shopify://shop_images/sale-2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_img_8JmhqW",
+        "item_main_4ggXA9",
+        "item_img_ypqfcW"
+      ],
+      "settings": {}
+    },
+    "contact_form_fd6kk3": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact us to order and receive purchase advice",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_blog_gCq3RW": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Change the look of your house, change the perspective of others",
+        "heading_size": "h1",
+        "blog": "blog-demo-1",
+        "post_limit": 4,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "section_accordion_YWDWmG": {
@@ -84,33 +260,179 @@
         "faq_dbLp8V": {
           "type": "FAQ",
           "settings": {
-            "title": "Your question",
-            "answer": "Your answer title",
-            "answer_content": "Your answer content"
+            "title": "How long does shipping take?",
+            "answer_content": "Your answer content. Your sales managers will go into the field feeling energized,  excited, and inspired. We are a full service business development group – we build strategies and systems."
           }
         },
         "faq_f6ighr": {
           "type": "FAQ",
           "settings": {
-            "title": "Your question",
-            "answer": "Your answer title",
-            "answer_content": "Your answer content"
+            "title": "Does my piece come in any packaging?",
+            "answer_content": "Yes, all our products come in protective and aesthetically pleasing packaging to ensure they arrive in perfect condition. Each product is securely wrapped, and we use eco-friendly materials whenever possible. Additionally, many of our products come in recyclable containers to support sustainability."
           }
         },
         "faq_AFEzUK": {
           "type": "FAQ",
           "settings": {
-            "title": "Your question",
-            "answer": "Your answer title",
-            "answer_content": "Your answer content"
+            "title": "Do you ship internationally?",
+            "answer_content": "Yes, we do ship internationally! We offer worldwide shipping to ensure customers around the globe can enjoy our products. Please note that shipping times and costs may vary depending on the destination country. International customers may also be subject to customs fees or import duties imposed by their country's customs authorities."
+          }
+        },
+        "faq_MqBTGL": {
+          "type": "FAQ",
+          "settings": {
+            "title": "What payment methods do you accept?",
+            "answer_content": "We accept a variety of payment methods to make your shopping experience convenient. These include credit cards (Visa, Mastercard, American Express), PayPal, and, in some regions, alternative payment methods such as Apple Pay or Google Pay. Rest assured, your payment information is secure and protected during the checkout process."
+          }
+        },
+        "faq_pDtYWP": {
+          "type": "FAQ",
+          "settings": {
+            "title": "What should I do if my order is not placed?",
+            "answer_content": "We’re sorry to hear that you’re unable to place an order. Please contact Customer Service and we will work on resolving the issue as quickly as possible"
           }
         }
       },
-      "block_order": ["faq_dbLp8V", "faq_f6ighr", "faq_AFEzUK"],
+      "block_order": [
+        "faq_dbLp8V",
+        "faq_f6ighr",
+        "faq_AFEzUK",
+        "faq_MqBTGL",
+        "faq_pDtYWP"
+      ],
       "settings": {
-        "heading-title": "FAQ on Design & Development"
+        "heading-title": "FAQ on Design & Development",
+        "heading_alignment": "center",
+        "padding_top": 55,
+        "padding_bottom": 95
+      }
+    },
+    "section_banner_small_eH4LUQ": {
+      "type": "section-banner-small",
+      "blocks": {
+        "heading_Hzcg4n": {
+          "type": "heading",
+          "settings": {
+            "heading": "Elevate Your Home"
+          }
+        },
+        "text_Pedwrz": {
+          "type": "text",
+          "settings": {
+            "text": "Clever products for every corner",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Hzcg4n",
+        "text_Pedwrz"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/banner.jpg",
+        "image_2": "shopify://shop_images/banner-mob.jpg",
+        "image_overlay_opacity": 50,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "section_service_ddNUiL": {
+      "type": "section-service",
+      "blocks": {
+        "column_VdctVj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/support.svg",
+            "title": "Free & fast delivery",
+            "text": "<p>We offer free shipping with ground delivery to the lower 48 states.</p>",
+            "link_label": ""
+          }
+        },
+        "column_TJ4Cnj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/payment.svg",
+            "title": "Online support",
+            "text": "<p>Online Support24 hours a day, 7 days a week</p>",
+            "link_label": ""
+          }
+        },
+        "column_3eEqLR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/return.svg",
+            "title": "30 Days return",
+            "text": "<p>Exchange or return items free of charge within 30 days.</p>",
+            "link_label": ""
+          }
+        },
+        "column_xfLKj3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2qNXY4c4zzMkAP2CAafrsCVrDcx.svg",
+            "title": "Flexible payment",
+            "text": "<p>Pay conveniently using multiple credit cards for added flexibility.</p>",
+            "link_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_VdctVj",
+        "column_TJ4Cnj",
+        "column_3eEqLR",
+        "column_xfLKj3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_contact_EECqiW": {
+      "type": "section-contact",
+      "settings": {
+        "background": "#f6f2ee",
+        "image_1": "shopify://shop_images/contact-1.jpg",
+        "image_2": "shopify://shop_images/contact-2.jpg",
+        "image_3": "shopify://shop_images/contact-3.jpg",
+        "image_4": "shopify://shop_images/contact-4.jpg",
+        "image_5": "shopify://shop_images/contact-5.jpg",
+        "heading": "78 Trung Kinh, Yen Hoa, Cau Giay, Hanoi.",
+        "desc": "Renovate your home AT",
+        "button_title": "@orangy",
+        "button_link": "",
+        "image_overlay_opacity": 0,
+        "show_text_box": true,
+        "show_text_below": true
       }
     }
   },
-  "order": ["image_banner", "featured_collection", "section_accordion_YWDWmG"]
+  "order": [
+    "image_banner",
+    "featured_colection_hMBKR7",
+    "featured_lists_product_7JyT8a",
+    "section_marquee_animation_ytB64h",
+    "section_salebook_3AFJid",
+    "contact_form_fd6kk3",
+    "featured_blog_gCq3RW",
+    "section_accordion_YWDWmG",
+    "section_banner_small_eH4LUQ",
+    "section_service_ddNUiL",
+    "section_contact_EECqiW"
+  ]
 }
