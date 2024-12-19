@@ -1,24 +1,15 @@
-h2.title.inline-richtext.h2.center.scroll-trigger.animate--slide-in {
-  font-family: lr;
-  letter-spacing: var(--ls);
-  color: var(--black-cl);
-  font-size: var(--fs-h2);
-  line-height: var(--lh1-h2);
-}
-
-.card__content .card__information .card__heading {
+.section-slider .card__content .card__information .card__heading {
   line-height: var(--lh-name-product);
   font-family: pm;
   font-size: var(--fs-body);
 }
-.card__content .card__information .card-information .price {
+.section-slider .card__content .card__information .card-information .price {
   font-size: var(--fs-price-sale);
   line-height: var(--lh-price-product);
 }
-
 @media screen and (max-width: 575.98px) {
-  .slider--tablet.grid--peek.grid--1-col-tablet-down .grid__item,
-  .slider--mobile.grid--peek.grid--1-col-tablet-down .grid__item {
+  .section-slider .slider--tablet.grid--peek.grid--1-col-tablet-down .grid__item,
+  .section-slider .slider--mobile.grid--peek.grid--1-col-tablet-down .grid__item {
     width: calc(100% - var(--grid-mobile-horizontal-spacing) - 18rem);
   }
 }
