@@ -1,38 +1,34 @@
 .banner-hero {
-  max-height: 1080px;
-  height: 100%;
+  height: 100vh;
 }
-.banner-hero div#Banner-template--23931705590036__image_banner {
-  height: 100%;
-}
-.banner-hero .textbox {
+.banner-hero .banner__content .textbox {
   max-width: 350px;
   position: absolute;
   top: 34%;
 }
-.banner-hero .textbox h2 {
+.banner-hero .banner__content .textbox h2 {
   color: var(--white-cl);
   margin-left: auto;
   margin-right: auto;
-  max-width: 280px;
+  max-width: 350px;
 }
-.banner-hero .textbox .banner__text {
+.banner-hero .banner__content .textbox .banner__text {
   font-family: pr;
   color: var(--white-cl);
   font-size: var(--fs-p-hero);
   line-height: var(--lh-p-hero);
 }
-.banner-hero .textbox .banner__buttons {
+.banner-hero .banner__content .textbox .banner__buttons {
   text-transform: uppercase;
   font-family: pm;
   font-size: var(--fs-body);
   line-height: var(--lh-body);
 }
 @media screen and (max-width: 767.98px) {
-  .banner-hero {
-    max-height: 600px;
-  }
-  .banner-hero .banner__box.content-container.content-container--full-width-mobile.color-scheme-3.gradient {
+  .banner-hero .banner__content .textbox {
     top: 25%;
+  }
+  .banner-hero .banner__content .textbox h2 {
+    max-width: 280px;
   }
 }
