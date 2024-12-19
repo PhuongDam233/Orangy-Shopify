@@ -14,10 +14,10 @@
     "footer": {
       "type": "footer",
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-4",
         "newsletter_enable": true,
         "newsletter_heading": "Subscribe to get 10% OFF",
-        "newsletter_desc": "Subscribe for store updates and discounts.",
+        "newsletter_desc": "missing translation: \"t:sections.footer.settings.newsletter_desc.default\" is not present in any of the [\"en\"] schema locale files",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": true,
@@ -30,5 +30,7 @@
       }
     }
   },
-  "order": ["footer"]
+  "order": [
+    "footer"
+  ]
 }
