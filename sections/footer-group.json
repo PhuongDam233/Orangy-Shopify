@@ -16,7 +16,8 @@
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
+        "newsletter_heading": "Subscribe to get 10% OFF",
+        "newsletter_desc": "Subscribe for store updates and discounts.",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": true,
@@ -29,7 +30,5 @@
       }
     }
   },
-  "order": [
-    "footer"
-  ]
+  "order": ["footer"]
 }

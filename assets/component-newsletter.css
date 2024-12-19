@@ -45,19 +45,22 @@
 .newsletter-form__button {
   width: 4.4rem;
   margin: 0;
-  right: var(--inputs-border-width);
+  /* right: var(--inputs-border-width); */
+  right: 0;
   top: 0;
   height: 100%;
   z-index: 2;
 }
 
 .newsletter-form__button:focus-visible {
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.4rem rgba(var(--color-foreground));
+  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
+    0 0 0 0.4rem rgba(var(--color-foreground));
   background-color: rgb(var(--color-background));
 }
 
 .newsletter-form__button:focus {
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.4rem rgba(var(--color-foreground));
+  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
+    0 0 0 0.4rem rgba(var(--color-foreground));
   background-color: rgb(var(--color-background));
 }
 
