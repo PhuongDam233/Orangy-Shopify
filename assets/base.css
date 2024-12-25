@@ -274,6 +274,10 @@ h5,
   font-size: var(--fs-h1);
   line-height: var(--lh1-h1);
 }
+.h1-collection {
+  font-size: var(--fs-h1-collection);
+  line-height: var(--lh1-h1-collection);
+}
 .h2 {
   font-size: var(--fs-h2);
   line-height: var(--lh1-h2);
@@ -2583,7 +2587,7 @@ input[type="checkbox"] {
 
 /* Header icons */
 .header__icons {
-  display: none;
+  display: flex;
   grid-area: icons;
   justify-self: end;
   padding-right: 0.8rem;
@@ -2798,7 +2802,7 @@ details[open] .modal-overlay::after {
 
 /* Header menu drawer */
 .header__icon--menu .icon {
-  display: none;
+  display: flex;
   position: absolute;
   opacity: 1;
   transform: scale(1);
@@ -3779,6 +3783,7 @@ details-disclosure > details {
   --gap: 20px;
   --gray-l-cl: #d1ceca;
   --black-cl: #000000;
+  --black-light-cl: #333333;
   --red-cl: #ee0000;
   --red-bold-cl: #a42003;
   --blue-cl: #6495ed;
@@ -3793,6 +3798,9 @@ details-disclosure > details {
   /* font size */
   --fs-h1: 7.2rem;
   --lh1-h1: 9rem;
+
+  --fs-h1-collection: 5.625rem;
+  --lh-h1-collection: 8rem;
 
   --fs-p-hero: 1.8rem;
   --lh-p-hero: 3rem;
@@ -3858,6 +3866,7 @@ details-disclosure > details {
   --height-button: 52px;
   --height-button-small: 34px;
   --pd-section: 120px;
+  --grid-shopify-vertical-spacing: 30px;
 
   /* Timing Transition Variable */
   --duration: 0.3s;
@@ -3878,6 +3887,8 @@ details-disclosure > details {
 
     --fs-text-large: 4.6rem;
     --lh-text-large: 6.4rem;
+
+     --grid-shopify-vertical-spacing: 8px;
   }
 }
 

@@ -2003,7 +2003,7 @@
       "settings": {
         "title": {
           "label": "Heading",
-          "default": "Collections"
+          "default": "Collection"
         },
         "sort": {
           "label": "Sort collections by:",

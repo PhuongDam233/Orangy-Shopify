@@ -1,0 +1,37 @@
+<style>
+</style>
+
+{% if template contains 'product' %}
+  {% assign ancestors = product.collections %}
+{% elsif template contains 'collection' %}
+  {% assign ancestors = collection.all_ancestors %}
+{% endif %}
+
+{% if ancestors.size > 0 %}
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ shop.url }}"></a></li>
+      {% for ancestor in ancestors %}
+        <li class="breadcrumb-item"><a href="{{ ancestor.url }}">{{ ancestor.title }}</a></li>
+      {% endfor %}
+      {% if template contains 'product' %}
+        <li class="breadcrumb-item active" aria-current="page">{{ product.title }}</li>
+      {% elsif template contains 'collection' %}
+        <li class="breadcrumb-item active" aria-current="page">{{ collection.title }}</li>
+      {% endif %}
+    </ol>
+  </nav>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Breacrumb Navigation ",
+  "class": "section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Breacrumb Navigation"
+    }
+  ]
+}
+{% endschema %}

@@ -85,7 +85,7 @@
   transform-origin: left;
   transform: scaleX(1);
 }
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 991.98px) {
   .section-tabs .collection__title {
     flex-direction: column;
     text-align: center;
