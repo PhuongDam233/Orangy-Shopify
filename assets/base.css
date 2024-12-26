@@ -303,12 +303,9 @@ h5,
 }
 
 .hxxl {
-  /* font-size: clamp(
-    calc(var(--font-heading-scale) * 5.6rem),
-    14vw,
-    calc(var(--font-heading-scale) * 7.2rem)
-  );
-  line-height: 1.1; */
+  letter-spacing: var(--ls);
+  font-size: var(--fs-h1);
+  line-height: var(--lh1-h1);
 }
 
 /* .hxl {
@@ -3888,7 +3885,7 @@ details-disclosure > details {
     --fs-text-large: 4.6rem;
     --lh-text-large: 6.4rem;
 
-     --grid-shopify-vertical-spacing: 8px;
+    --grid-shopify-vertical-spacing: 8px;
   }
 }
 

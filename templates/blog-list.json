@@ -1,0 +1,15 @@
+{
+  "tabs": [
+    {
+      "title": "All post",
+      "content": "Nội dung của tab 1",
+      "active": true
+    },
+    {
+      "title": "Tab 2",
+      "content": "Nội dung của tab 2",
+      "active": false
+    }
+    // ... thêm các tab khác
+  ]
+}

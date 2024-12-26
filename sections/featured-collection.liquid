@@ -74,7 +74,6 @@
           {% assign collection = collections[block.settings.collection] %}
           <li data-tab="{{ forloop.index }}" class="sctabs__tab-item  {% if forloop.first == true %}active{% endif %}" >{{ block.settings.name-tab | default: collection.title }}</li>
         {% endfor %}
-
             </ul>
       {%- endif -%}
       {%- if section.blocks.settings.description != blank

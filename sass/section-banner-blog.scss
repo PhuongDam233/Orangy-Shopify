@@ -1,0 +1,37 @@
+.banner-hero {
+  height: 100vh;
+  .banner__content {
+    .textbox {
+      position: absolute;
+      top: 34%;
+      h2 {
+        color: var(--white-cl);
+        font-size: 3.428rem;
+        line-height: 4.8rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .banner__text {
+        font-family: pm;
+        color: var(--white-cl);
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+      }
+      .banner__buttons {
+        text-transform: uppercase;
+        background-color: var(--white-cl);
+        color: var(--black-cl);
+        font-family: pm;
+        font-size: 1.5rem;
+        line-height: 3rem;
+      }
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    .banner__content {
+      .textbox {
+        top: 25%;
+      }
+    }
+  }
+}

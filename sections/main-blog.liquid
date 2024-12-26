@@ -2,6 +2,9 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
 
+{{ 'section-blog-list-main.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'bloglist.js' | asset_url }}" defer="defer"></script>
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -14,13 +17,31 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  
 {%- endstyle -%}
 
-{%- paginate blog.articles by 6 -%}
+{%- paginate blog.articles by 9 -%}
   <div class="main-blog page-width section-{{ section.id }}-padding">
-    <h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-      {{ blog.title | escape }}
+    <h1 class="heading h1-collection title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      {% comment %} {{ blog.title | escape }} {% endcomment %}
+         {{ section.settings.heading }}
     </h1>
+
+       {% if blog.tags.size > 0 %}
+      <div class="blog-filter">
+        <div class="list-group">
+          <ul id="BlogTagFilter" class="tag-list">
+            {% for tag in blog.all_tags %}
+            <li class="tag-btn-link {% if forloop.first == true %}active{% endif %}">
+              <a href="{{ blog.url }}/tagged/{{ tag | handleize }}" class="tabs-button">
+              {{ tag }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
 
     <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
@@ -57,6 +78,11 @@
   "class": "section",
   "settings": [
     {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
       "type": "header",
       "content": "t:sections.main-blog.settings.header.content"
     },
@@ -73,7 +99,7 @@
           "label": "t:sections.main-blog.settings.layout.options__2.label"
         }
       ],
-      "default": "collage",
+      "default": "grid",
       "label": "t:sections.main-blog.settings.layout.label",
       "info": "t:sections.main-blog.settings.layout.info"
     },
@@ -149,5 +175,24 @@
       "default": 36
     }
   ]
+//   "blocks": [
+//     {
+//     "type": "tab",
+//     "name": "Tab",
+//     "limit": 8,
+//     "settings": [{
+//       "type": "blog",
+//       "id": "blog",
+//       "label": "t:sections.featured-blog.settings.blog.label"
+//     },
+//         {
+//       "type": "inline_richtext",
+//       "id": "name-tab",
+//       "default": "t:sections.featured-collection.settings.name-tab.default",
+//       "label": "t:sections.featured-collection.settings.name-tab.label"
+//     }
+// ]
+//     }
+//   ]
 }
 {% endschema %}

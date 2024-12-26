@@ -104,6 +104,9 @@
                 {%- endif -%}
               </div>
             {%- endif -%}
+            <a href="{{ article.url }}" class="btn-full-link">
+                Learn more
+            </a>
           </div>
           {%- if show_badge -%}
             <div class="card__badge {{ settings.badge_position }}">
@@ -127,6 +130,9 @@
               <span>{{ article.author }}</span>
             {%- endif -%}
           </div>
+           <a href="{{ article.url }}" class="btn-full-link">
+                Learn more
+            </a>
           {%- if show_excerpt -%}
             {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
               <p class="article-card__excerpt rte-width">
