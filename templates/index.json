@@ -31,8 +31,13 @@
           }
         }
       },
-      "block_order": ["heading", "button"],
+      "block_order": [
+        "heading",
+        "button"
+      ],
       "settings": {
+        "image": "shopify://shop_images/hero.jpg",
+        "image_2": "shopify://shop_images/hero-mob.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -212,7 +217,11 @@
           }
         }
       },
-      "block_order": ["item_img_8JmhqW", "item_main_4ggXA9", "item_img_ypqfcW"],
+      "block_order": [
+        "item_img_8JmhqW",
+        "item_main_4ggXA9",
+        "item_img_ypqfcW"
+      ],
       "settings": {}
     },
     "contact_form_fd6kk3": {
@@ -312,7 +321,10 @@
           }
         }
       },
-      "block_order": ["heading_Hzcg4n", "text_Pedwrz"],
+      "block_order": [
+        "heading_Hzcg4n",
+        "text_Pedwrz"
+      ],
       "settings": {
         "image": "shopify://shop_images/banner.jpg",
         "image_2": "shopify://shop_images/banner-mob.jpg",
