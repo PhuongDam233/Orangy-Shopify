@@ -5,6 +5,9 @@
   gap: 40px;
   margin-bottom: 45px;
 }
+.main-blog .blog-filter .list-group .tag-list li {
+  cursor: pointer;
+}
 .main-blog .blog-filter .list-group .tag-list li .tabs-button {
   color: var(--black-cl);
   font-family: pm;
@@ -23,22 +26,40 @@
   transform-origin: right;
   transition: var(--duration) transform;
 }
-.main-blog .blog-filter .list-group .tag-list li.active::after, .main-blog .blog-filter .list-group .tag-list li:hover::after {
+.main-blog .blog-filter .list-group .tag-list li.active::after,
+.main-blog .blog-filter .list-group .tag-list li:hover::after {
   transform-origin: left;
   transform: scaleX(1);
 }
-.main-blog .blog-articles .blog-articles__article .card .card__content .card__information {
+.main-blog
+  .blog-articles
+  .blog-articles__article
+  .card
+  .card__content
+  .card__information {
   display: flex;
   flex-direction: column;
 }
-.main-blog .blog-articles .blog-articles__article .card .card__content .card__information .card__heading {
+.main-blog
+  .blog-articles
+  .blog-articles__article
+  .card
+  .card__content
+  .card__information
+  .card__heading {
   order: 2;
   font-size: var(--fs-h3);
   line-height: var(--lh-h3);
   font-family: lr;
   letter-spacing: var(--ls);
 }
-.main-blog .blog-articles .blog-articles__article .card .card__content .card__information .article-card__info {
+.main-blog
+  .blog-articles
+  .blog-articles__article
+  .card
+  .card__content
+  .card__information
+  .article-card__info {
   order: 1;
   color: var(--black-cl);
   font-family: pm;
@@ -46,17 +67,35 @@
   line-height: 2.2rem;
   letter-spacing: var(--ls);
 }
-.main-blog .blog-articles .blog-articles__article .card .card__content .card__information .article-card__excerpt {
+.main-blog
+  .blog-articles
+  .blog-articles__article
+  .card
+  .card__content
+  .card__information
+  .article-card__excerpt {
   order: 3;
   color: var(--black-cl);
   font-family: pm;
   font-size: 1.5rem;
   line-height: 2.4rem;
 }
-.main-blog .blog-articles .blog-articles__article .card .card__content .card__information .article-card__footer {
+.main-blog
+  .blog-articles
+  .blog-articles__article
+  .card
+  .card__content
+  .card__information
+  .article-card__footer {
   order: 4;
 }
-.main-blog .blog-articles .blog-articles__article .card .card__content .card__information .btn-full-link {
+.main-blog
+  .blog-articles
+  .blog-articles__article
+  .card
+  .card__content
+  .card__information
+  .btn-full-link {
   order: 5;
   color: var(--black-cl);
   font-family: pm;

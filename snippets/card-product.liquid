@@ -139,8 +139,16 @@
               >
                 {{- 'products.product.on_sale' | t -}}
               </span> {% endcomment %}
-           {% if card_product.tags contains 'discount' %}
-            <span class="card__badge--discount">{{ '-30%' }}</span>
+           {% if card_product.tags contains '-30' %}
+            <span class="card__badge--30">{{ '-30%' }}</span>
+            {% endif %}
+
+            {% if card_product.tags contains '-22' %}
+            <span class="card__badge--22">{{ '-22%' }}</span>
+            {% endif %}
+
+            {% if card_product.tags contains 'save' %}
+            <span class="card__badge--save">{{ 'Save 23%' }}</span>
             {% endif %}
             
             {%- endif -%}

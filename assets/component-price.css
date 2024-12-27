@@ -75,9 +75,10 @@
 }
 
 .price--on-sale .price__sale {
-  display: initial;
-  flex-direction: row;
+  display: flex;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
+  gap: 8px;
 }
 
 .price--center {
@@ -101,6 +102,6 @@
   color: rgba(var(--color-foreground), 0.7);
 }
 
-s.price-item.price-item--regular {
+span.price-item.price-item--sale.price-item--last {
   color: var(--red-cl);
 }

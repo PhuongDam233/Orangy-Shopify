@@ -1,0 +1,28 @@
+{
+  "tabs": [
+    {
+      "tag": "allpost",
+      "link": "/blogs/all-posts/tagged/allposst",
+      "title": "All post",
+      "content": ""
+    },
+    {
+      "tag": "funiture",
+      "link": "/blogs/all-posts/tagged/funiture",
+      "title": "funiture",
+      "content": ""
+    },
+    {
+      "tag": "lifestyle",
+      "link": "/blogs/all-posts/tagged/lifestyle",
+      "title": "funiture",
+      "content": ""
+    },
+    {
+      "tag": "material",
+      "link": "/blogs/all-posts/tagged/material",
+      "title": "funituret",
+      "content": ""
+    }
+  ]
+}

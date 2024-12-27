@@ -16,6 +16,8 @@
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
+  {{ 'section-accordion.css' | asset_url | stylesheet_tag }}
+  
   {% unless product.has_only_default_variant %}
     {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
     {{ 'component-swatch-input.css' | asset_url | stylesheet_tag }}
@@ -41,6 +43,8 @@
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'accordion.js' | asset_url }}" defer="defer"></script>
+
   {%- if product.quantity_price_breaks_configured? -%}
     <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
@@ -660,7 +664,19 @@
                 </product-recommendations>
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
-            {%- endcase -%}
+              {%- when 'FAQ' -%}
+            <div class="accordion__list-item">
+             <div class="question">
+              <h3 class="heading --h3-small">{{ block.settings.title_faq }}</h3>
+              <div class="icon"><span></span></div>
+              </div>
+             <div class="answer">
+              <div class="answer__content">
+                 {{ block.settings.answer_content }}
+              </div>
+              </div>
+            </div>
+              {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
             {{ 'products.product.view_full_details' | t }}
@@ -902,7 +918,7 @@
         {
           "type": "checkbox",
           "id": "show_dynamic_checkout",
-          "default": true,
+          "default": false,
           "label": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.label",
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
         },
@@ -2074,6 +2090,24 @@
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
         }
       ]
+    },
+    {
+      "name": "FAQ Item",
+			"type": "FAQ",
+			"settings": [
+				{
+					"type": "text",
+					"id": "title_faq",
+					"label": "Question title",
+					"default": "Your question"
+				},
+        {
+					"type": "textarea",
+					"id": "answer_content",
+					"label": "Answer content",
+					"default": "Your answer content"
+				}
+			]
     }
   ],
   "settings": [
