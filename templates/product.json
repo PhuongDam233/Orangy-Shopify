@@ -31,7 +31,7 @@
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
-            "swatch_shape": "circle"
+            "swatch_shape": "square"
           }
         },
         "quantity_selector": {
@@ -71,8 +71,8 @@
         "color_scheme": "scheme-1",
         "media_size": "large",
         "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "gallery_layout": "stacked",
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
         "media_position": "left",
         "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
@@ -101,8 +101,5 @@
       }
     }
   },
-  "order": [
-    "main",
-    "related-products"
-  ]
+  "order": ["main", "related-products"]
 }

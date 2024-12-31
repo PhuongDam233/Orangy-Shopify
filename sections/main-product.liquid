@@ -16,8 +16,8 @@
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
-  {{ 'section-accordion.css' | asset_url | stylesheet_tag }}
-  
+  {{ 'section-product-main.css' | asset_url | stylesheet_tag }}
+
   {% unless product.has_only_default_variant %}
     {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
     {{ 'component-swatch-input.css' | asset_url | stylesheet_tag }}
@@ -75,7 +75,6 @@
       onload="this.media='all'"
     >
   {%- endif -%}
-
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
   <div class="page-width">
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
@@ -102,7 +101,7 @@
                 </p>
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
-                  <h1>{{ product.title | escape }}</h1>
+                  <h1 class="heading h2">{{ product.title | escape }}</h1>
                   <a href="{{ product.url }}" class="product__title">
                     <h2 class="h1">
                       {{ product.title | escape }}
@@ -676,6 +675,17 @@
               </div>
               </div>
             </div>
+            {%- when 'service-info' -%}
+              <div class="service__list">
+                <div class="service__list-item">
+                  <div class="img">
+                      {{ block.settings.icon-service | image_url: width: 20  | image_tag:
+                          widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
+                          sizes: sizes}}
+                   </div>
+                <p class="heading --text-body-smal">{{ block.settings.title_service }}</p>
+                </div>
+            </div>
               {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -906,7 +916,7 @@
               "label": "t:sections.main-product.blocks.variant_picker.settings.swatch_shape.options__3.label"
             }
           ],
-          "default": "circle"
+          "default": "square"
         }
       ]
     },
@@ -2108,6 +2118,22 @@
 					"default": "Your answer content"
 				}
 			]
+    },
+      {
+      "name": "Service information",
+			"type": "service-info",
+			"settings": [
+         {
+					"type": "image_picker",
+          "id": "icon-service",
+          "label": "Your service icon"
+				},
+				{
+					"type": "text",
+					"id": "title_service",
+					"label": "Your service"
+				}
+			]
     }
   ],
   "settings": [
@@ -2145,7 +2171,7 @@
           "label": "t:sections.main-product.settings.media_size.options__3.label"
         }
       ],
-      "default": "large",
+      "default": "medium",
       "label": "t:sections.main-product.settings.media_size.label",
       "info": "t:sections.main-product.settings.media_size.info"
     },
@@ -2168,7 +2194,7 @@
           "label": "t:sections.main-product.settings.media_fit.options__2.label"
         }
       ],
-      "default": "contain",
+      "default": "cover",
       "label": "t:sections.main-product.settings.media_fit.label"
     },
     {
@@ -2192,7 +2218,7 @@
           "label": "t:sections.main-product.settings.gallery_layout.options__4.label"
         }
       ],
-      "default": "stacked",
+      "default": "thumbnail_slider",
       "label": "t:sections.main-product.settings.gallery_layout.label"
     },
     {

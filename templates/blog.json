@@ -12,7 +12,10 @@
     "main": {
       "type": "main-blog",
       "settings": {
+<<<<<<< HEAD
         "heading": "",
+=======
+>>>>>>> alpha
         "layout": "grid",
         "show_image": true,
         "image_height": "medium",

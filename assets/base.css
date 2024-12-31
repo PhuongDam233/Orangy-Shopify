@@ -304,6 +304,10 @@ h5,
   font-size: var(--fs-h3-s);
   line-height: var(--lh-h3-s);
 }
+.--text-body-smal {
+  font-size: var(--fs-body-s);
+  line-height: var(--lh-body);
+}
 
 .hxxl {
   letter-spacing: var(--ls);
@@ -3007,16 +3011,20 @@ details-disclosure > details {
 
 .badge {
   border: 1px solid transparent;
-  border-radius: var(--badge-corner-radius);
+  /* border-radius: var(--badge-corner-radius); */
   display: inline-block;
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
-  line-height: 1;
-  padding: 0.5rem 1.3rem 0.6rem 1.3rem;
+  /* font-size: 1.2rem; */
+  font-size: 1.35rem;
+  /* letter-spacing: 0.1rem; */
+  letter-spacing: var(--ls);
+  /* line-height: 1; */
+  line-height: 1.8rem;
+  /* padding: 0.5rem 1.3rem 0.6rem 1.3rem; */
+  padding: 0rem 0.9rem;
   text-align: center;
-  background-color: rgb(var(--color-badge-background));
+  background-color: var(--red-tag-sale-cl);
   border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
-  color: rgb(var(--color-badge-foreground));
+  color: var(--white-cl);
   word-break: break-word;
 }
 
@@ -3786,6 +3794,7 @@ details-disclosure > details {
   --black-light-cl: #333333;
   --red-cl: #ee0000;
   --red-bold-cl: #a42003;
+  --red-tag-sale-cl: #a42003;
   --blue-cl: #6495ed;
   --blue-green-cl: #054e4a;
   --grey-cl: #f4f4f4;
@@ -3828,6 +3837,7 @@ details-disclosure > details {
   --lh-body-l: 3.2rem;
 
   --fs-body: 1.6rem;
+  --fs-body-s: 1.5rem;
   --lh-body: 2.4rem;
 
   --fs-textlabel: 1.4rem;
