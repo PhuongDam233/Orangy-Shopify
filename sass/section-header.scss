@@ -1,6 +1,7 @@
 .header {
   height: var(--height-header);
   background-color: var(--white-cl);
+  max-width: var(--max-width-container-fluid);
   &__heading {
     &-link {
       .h2 {
