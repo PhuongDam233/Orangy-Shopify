@@ -684,6 +684,7 @@ h3 .icon-arrow,
   align-items: center;
   width: 20px;
   height: 20px;
+  padding-right: 6px;
 }
 
 .svg-wrapper > svg {
@@ -3798,6 +3799,7 @@ details-disclosure > details {
   --blue-cl: #6495ed;
   --blue-green-cl: #054e4a;
   --grey-cl: #f4f4f4;
+  --grey-boder-cl: #c5c2be;
   --white-cl: #ffffff;
   --brown-cl: #6e331a;
   --background-contact-cl: #f6f2ee;
