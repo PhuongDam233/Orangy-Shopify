@@ -37,102 +37,6 @@
         "padding_bottom": 0
       }
     },
-    "section_banner_small_4ChEAe": {
-      "type": "section-banner-small",
-      "blocks": {
-        "heading_aJw67J": {
-          "type": "heading",
-          "settings": {
-            "heading": "Elevate Your Home"
-          }
-        },
-        "text_hHrYnL": {
-          "type": "text",
-          "settings": {
-            "text": "Clever products for every corner",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_aJw67J",
-        "text_hHrYnL"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/banner.jpg",
-        "image_2": "shopify://shop_images/banner-mob.jpg",
-        "image_overlay_opacity": 50,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "section_service_Wq69cm": {
-      "type": "section-service",
-      "blocks": {
-        "column_A8FXJn": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/support.svg",
-            "title": "Free & fast delivery",
-            "text": "<p>We offer free shipping with ground delivery to the lower 48 states.</p>",
-            "link_label": ""
-          }
-        },
-        "column_q4Q33z": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/payment.svg",
-            "title": "Online support",
-            "text": "<p>Online Support24 hours a day,7 days a week</p>",
-            "link_label": ""
-          }
-        },
-        "column_bh7gXY": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/return.svg",
-            "title": "30 Days return",
-            "text": "<p>Exchange or return items free of charge within 30 days.</p>",
-            "link_label": ""
-          }
-        },
-        "column_fJkn7J": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/2qNXY4c4zzMkAP2CAafrsCVrDcx.svg",
-            "title": "Flexible payment",
-            "text": "<p>Pay conveniently using multiple credit cards for added flexibility.</p>",
-            "link_label": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_A8FXJn",
-        "column_q4Q33z",
-        "column_bh7gXY",
-        "column_fJkn7J"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "left",
-        "background_style": "none",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "section_contact_r6bhYP": {
       "type": "section-contact",
       "settings": {
@@ -150,13 +54,117 @@
         "show_text_box": true,
         "show_text_below": true
       }
+    },
+    "image_banner_mza4C6": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_EPMQ9D": {
+          "type": "heading",
+          "settings": {
+            "heading": "Elevate Your Home",
+            "heading_size": "hxl"
+          }
+        },
+        "text_Fpm8H4": {
+          "type": "text",
+          "settings": {
+            "text": "Clever products for every corner",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EPMQ9D",
+        "text_Fpm8H4"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/banner_5e479acb-a410-4af8-bd41-0799cc7524cd.jpg",
+        "image_2": "shopify://shop_images/banner-mob.jpg",
+        "image_overlay_opacity": 50,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "multicolumn_EyjiKf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_GBDcai": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/support.svg",
+            "title": "Free & fast delivery",
+            "text": "<p>We offer free shipping with ground delivery to the lower 48 states.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Qq69aR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/payment.svg",
+            "title": "Online support",
+            "text": "<p>Online Support24 hours a day,7 days a week</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_GBmh8j": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/return.svg",
+            "title": "30 Days return",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_dcJ8kF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2qNXY4c4zzMkAP2CAafrsCVrDcx.svg",
+            "title": "Flexible payment",
+            "text": "<p>Pay conveniently using multiple credit cards for added flexibility.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_GBDcai",
+        "column_Qq69aR",
+        "column_GBmh8j",
+        "column_dcJ8kF"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
-    "section_banner_small_4ChEAe",
-    "section_service_Wq69cm",
-    "section_contact_r6bhYP"
+    "section_contact_r6bhYP",
+    "image_banner_mza4C6",
+    "multicolumn_EyjiKf"
   ]
 }
