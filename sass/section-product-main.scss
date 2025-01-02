@@ -6,8 +6,9 @@
     gap: 10px;
   }
 }
-@media screen and (min-width: 750px) {
-  .product--thumbnail_slider {
+.product--thumbnail_slider {
+  --width-img: 150px;
+  @media screen and (min-width: 750px) {
     media-gallery {
       display: flex;
       flex-direction: row-reverse;
@@ -35,10 +36,8 @@
       }
       .thumbnail-slider {
         align-items: flex-start;
-        margin-right: 30px;
-        width: 150px;
         .slider-button {
-          display: flex;
+          display: none;
         }
         .thumbnail-list {
           flex-direction: column;
@@ -46,7 +45,7 @@
             padding-bottom: 0;
             .thumbnail-list__item {
               &.slider__slide {
-                width: 150px;
+                width: var(--width-img);
               }
             }
           }
@@ -54,8 +53,21 @@
       }
     }
   }
+  @media screen and (max-width: 1440px) {
+    --width-img: 117px;
+  }
+  @media screen and (max-width: 1366px) {
+    --width-img: 91px;
+  }
+  @media screen and (max-width: 1024px) {
+    --width-img: 131px;
+  }
+  @media screen and (max-width: 834px) {
+    --width-img: 71px;
+  }
 }
 .product__info-wrapper {
+  --width-btn: 385px;
   position: relative;
   .product__info-container {
     .product__title {
@@ -89,22 +101,27 @@
           }
         }
       }
-      .product-form {
-        .form {
-          .product-form__buttons {
-            .product-form__submit {
-              text-transform: uppercase;
-              font-family: pm;
-              color: var(--black-cl);
-              background-color: var(--white-cl);
-              border: 1px solid var(--grey-boder-cl);
-              transition: var(--duration);
-              &::after {
-                content: initial;
-              }
-              &:hover {
-                color: var(--white-cl);
-                background-color: var(--black-cl);
+      div {
+        &:nth-child(2) {
+          width: 100%;
+          .product-form {
+            .form {
+              .product-form__buttons {
+                .product-form__submit {
+                  text-transform: uppercase;
+                  font-family: pm;
+                  color: var(--black-cl);
+                  background-color: var(--white-cl);
+                  border: 1px solid var(--grey-boder-cl);
+                  transition: var(--duration);
+                  &::after {
+                    content: initial;
+                  }
+                  &:hover {
+                    color: var(--white-cl);
+                    background-color: var(--black-cl);
+                  }
+                }
               }
             }
           }
