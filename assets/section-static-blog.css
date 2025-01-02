@@ -49,6 +49,9 @@
   font-size: var(--fs-body);
   line-height: var(--lh-body);
 }
+.articles-wrapper .blog__post .article-card-wrapper .card__content .card__information .btn-full-link {
+  display: none;
+}
 @media screen and (max-width: 1366.98px) {
   .articles-wrapper {
     --gap: 61px;

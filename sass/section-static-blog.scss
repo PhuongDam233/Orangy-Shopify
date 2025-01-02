@@ -57,6 +57,9 @@
             font-size: var(--fs-body);
             line-height: var(--lh-body);
           }
+          .btn-full-link {
+            display: none;
+          }
         }
       }
     }
