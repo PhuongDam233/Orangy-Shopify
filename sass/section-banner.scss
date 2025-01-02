@@ -1,15 +1,25 @@
 .banner-hero {
-  height: 100vh;
+  // height: 100vh;
+  &.banner--medium {
+    .banner__content {
+      .textbox {
+        h2 {
+          max-width: 454px;
+        }
+      }
+    }
+  }
   .banner__content {
     .textbox {
-      max-width: 350px;
+      // max-width: 350px;
       position: absolute;
-      top: 34%;
+      top: 50%;
+      transform: translateY(-50%);
       h2 {
         color: var(--white-cl);
         margin-left: auto;
         margin-right: auto;
-        max-width: 350px;
+        // max-width: 350px;
       }
       .banner__text {
         font-family: pr;
@@ -26,12 +36,21 @@
     }
   }
   @media screen and (max-width: 767.98px) {
-    // height: 600px;
-    .banner__content {
-      .textbox {
-        top: 25%;
-        h2 {
-          max-width: 280px;
+    &.banner--small {
+      .banner__content {
+        .textbox {
+          h2 {
+            max-width: 240px;
+          }
+        }
+      }
+    }
+    &.banner--medium {
+      .banner__content {
+        .textbox {
+          h2 {
+            max-width: 300px;
+          }
         }
       }
     }

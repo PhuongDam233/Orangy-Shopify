@@ -1,20 +1,12 @@
-ul#Slider-template--23931705590036__section_service_UUCtiL {
-  .service-inner {
-    .service-item {
-      //   display: flex;
-      .multicolumn-card__info {
-        h3 {
-          color: var(--black-cl);
-          font-family: lr;
-          font-size: var(--fs-body-l);
-          line-height: var(--lh-body-l);
-        }
-        .rte {
-          color: var(--black-cl);
-          font-size: var(--fs-text-service);
-          line-height: var(--lh-text-service);
-        }
-      }
+.multicolumn-list {
+  @media screen and (max-width: 991.98px) {
+    .multicolumn-list__item {
+      width: calc(50% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    .multicolumn-list__item {
+      width: 100%;
     }
   }
 }
