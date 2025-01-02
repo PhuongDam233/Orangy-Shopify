@@ -37,24 +37,6 @@
         "padding_bottom": 0
       }
     },
-    "section_contact_r6bhYP": {
-      "type": "section-contact",
-      "settings": {
-        "background": "#f6f2ee",
-        "image_1": "shopify://shop_images/contact-1.jpg",
-        "image_2": "shopify://shop_images/contact-2.jpg",
-        "image_3": "shopify://shop_images/contact-3.jpg",
-        "image_4": "shopify://shop_images/contact-4.jpg",
-        "image_5": "shopify://shop_images/contact-5.jpg",
-        "heading": "78 Trung Kinh, Yen Hoa, Cau Giay, Hanoi.",
-        "desc": "Renovate your home AT",
-        "button_title": "@orangy",
-        "button_link": "",
-        "image_overlay_opacity": 0,
-        "show_text_box": true,
-        "show_text_below": true
-      }
-    },
     "image_banner_mza4C6": {
       "type": "image-banner",
       "blocks": {
@@ -181,7 +163,6 @@
   "order": [
     "banner",
     "product-grid",
-    "section_contact_r6bhYP",
     "image_banner_mza4C6",
     "multicolumn_EyjiKf",
     "section_contact_qrMGDX"
