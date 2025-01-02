@@ -122,7 +122,7 @@
         {%- case block.type -%}
           {%- when 'heading' -%}
             <h2
-              class="heading h1 banner__heading inline-richtext {{ block.settings.heading_size }}"
+              class="heading banner__heading inline-richtext {{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
             >
               {{ block.settings.heading }}
@@ -217,7 +217,7 @@
           "label": "t:sections.image-banner.settings.image_height.options__4.label"
         }
       ],
-      "default": "adapt",
+      "default": "large",
       "label": "t:sections.image-banner.settings.image_height.label",
       "info": "t:sections.image-banner.settings.image_height.info"
     },
@@ -268,7 +268,7 @@
     {
       "type": "checkbox",
       "id": "show_text_box",
-      "default": true,
+      "default": false,
       "label": "t:sections.image-banner.settings.show_text_box.label"
     },
     {
@@ -352,7 +352,7 @@
     {
       "type": "checkbox",
       "id": "stack_images_on_mobile",
-      "default": true,
+      "default": false,
       "label": "t:sections.image-banner.settings.stack_images_on_mobile.label"
     },
     {
