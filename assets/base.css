@@ -376,16 +376,16 @@ h2,
 h3,
 .h3 {
   /* font-size: calc(var(--font-heading-scale) * 1.7rem); */
-  font-size: var(--fs-h3);
-  line-height: var(--lh-h3);
+  font-size: var(--fs-body-l);
+  line-height: var(--lh-body-l);
 }
 
-@media only screen and (min-width: 750px) {
+/* @media only screen and (min-width: 750px) {
   h3,
   .h3 {
     font-size: calc(var(--font-heading-scale) * 1.8rem);
   }
-}
+} */
 
 h4,
 .h4 {

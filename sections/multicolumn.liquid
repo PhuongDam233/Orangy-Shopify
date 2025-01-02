@@ -1,5 +1,6 @@
 {{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'section-service.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -250,7 +251,7 @@
           "label": "t:sections.multicolumn.settings.image_width.options__3.label"
         }
       ],
-      "default": "full",
+      "default": "third",
       "label": "t:sections.multicolumn.settings.image_width.label"
     },
     {
@@ -283,7 +284,7 @@
       "min": 1,
       "max": 6,
       "step": 1,
-      "default": 3,
+      "default": 4,
       "label": "t:sections.multicolumn.settings.columns_desktop.label"
     },
     {
@@ -373,7 +374,7 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
-      "default": 80
+      "default": 36
     },
     {
       "type": "range",
@@ -383,7 +384,7 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
-      "default": 80
+      "default": 36
     }
   ],
   "blocks": [
@@ -425,6 +426,9 @@
     {
       "name": "t:sections.multicolumn.presets.name",
       "blocks": [
+        {
+          "type": "column"
+        },
         {
           "type": "column"
         },
