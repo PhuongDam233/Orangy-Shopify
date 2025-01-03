@@ -19,6 +19,13 @@
             "heading_size": "hxxl"
           }
         },
+        "text_YxEzyn": {
+          "type": "text",
+          "settings": {
+            "text": "Clever products for every corner",
+            "text_style": "body"
+          }
+        },
         "button": {
           "type": "buttons",
           "settings": {
@@ -31,12 +38,20 @@
           }
         }
       },
+<<<<<<< HEAD
       "block_order": ["heading", "button"],
+=======
+      "block_order": [
+        "heading",
+        "text_YxEzyn",
+        "button"
+      ],
+>>>>>>> 5e7c4586af7026c022c703ea49eeea16234cb1e4
       "settings": {
         "image": "shopify://shop_images/hero.jpg",
         "image_2": "shopify://shop_images/hero-mob.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -297,6 +312,46 @@
         "padding_bottom": 95
       }
     },
+<<<<<<< HEAD
+=======
+    "image_banner_pVdwcw": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_3H7Pmp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Elevate Your Home",
+            "heading_size": "hxl"
+          }
+        },
+        "text_CEaCzg": {
+          "type": "text",
+          "settings": {
+            "text": "Clever products for every corner",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3H7Pmp",
+        "text_CEaCzg"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/banner_5e479acb-a410-4af8-bd41-0799cc7524cd.jpg",
+        "image_2": "shopify://shop_images/banner-mob.jpg",
+        "image_overlay_opacity": 50,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+>>>>>>> 5e7c4586af7026c022c703ea49eeea16234cb1e4
     "section_contact_EECqiW": {
       "type": "section-contact",
       "settings": {
@@ -325,6 +380,10 @@
     "contact_form_fd6kk3",
     "featured_blog_gCq3RW",
     "section_accordion_YWDWmG",
+<<<<<<< HEAD
+=======
+    "image_banner_pVdwcw",
+>>>>>>> 5e7c4586af7026c022c703ea49eeea16234cb1e4
     "section_contact_EECqiW"
   ]
 }
