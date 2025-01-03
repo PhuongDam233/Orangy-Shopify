@@ -9,6 +9,15 @@
       }
     }
   }
+  &.banner--large {
+    .banner__content {
+      .textbox {
+        h2 {
+          max-width: 500px;
+        }
+      }
+    }
+  }
   .banner__content {
     .textbox {
       // max-width: 350px;

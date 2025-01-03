@@ -1,6 +1,9 @@
 .banner-hero.banner--medium .banner__content .textbox h2 {
   max-width: 454px;
 }
+.banner-hero.banner--large .banner__content .textbox h2 {
+  max-width: 500px;
+}
 .banner-hero .banner__content .textbox {
   position: absolute;
   top: 50%;
