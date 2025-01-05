@@ -24,19 +24,18 @@
 </div>
 {% endif %}
 {% comment %} Item 2 {% endcomment %}
-      {% if block.type == 'item-main' %}
+{% if block.type == 'item-main' %}
 <div class="scsalebook__img">
    <div class="scsalebook__img-top">
     <span>{{ block.settings.sale-desc}}</span>
    </div>
-   <div class="scsalebook__img-bottom">
+   <div style="background-color:{{block.settings.background}}" class="scsalebook__img-bottom ">
     <span class="content">{{ block.settings.sale-title}}</span>
     <span class="desc">{{ block.settings.sale-content}}</span>
     <span class="time">{{ block.settings.sale-time}}</span>
    </div>
 </div>
 {% endif %}
-
      {% endfor %}
   </div>
   
@@ -64,9 +63,9 @@
   "name": "Item sale",
   "type": "item-main",
   "settings": [{
-    "type": "color_background",
+    "type": "color",
     "id": "background",
-    "label": "Background",
+    "label": "Background Color",
     "default": "#6e331a"
   },
   {

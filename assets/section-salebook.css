@@ -14,15 +14,17 @@
   aspect-ratio: 420/560;
   position: relative;
 }
+.scsalebook__img img {
+  width: 100%;
+}
 .scsalebook__img:nth-child(2) {
-  padding: 32px 0px;
-  background-color: var(--brown-cl);
   color: var(--white-cl);
   text-align: center;
 }
 .scsalebook__img-top {
   width: 100%;
   position: absolute;
+  padding-top: 32px;
 }
 .scsalebook__img-top span {
   font-family: pm;

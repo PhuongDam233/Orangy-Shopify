@@ -1,26 +1,6 @@
 .banner-hero {
-  // height: 100vh;
-  &.banner--medium {
-    .banner__content {
-      .textbox {
-        h2 {
-          max-width: 454px;
-        }
-      }
-    }
-  }
-  &.banner--large {
-    .banner__content {
-      .textbox {
-        h2 {
-          max-width: 500px;
-        }
-      }
-    }
-  }
   .banner__content {
     .textbox {
-      // max-width: 350px;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -28,7 +8,12 @@
         color: var(--white-cl);
         margin-left: auto;
         margin-right: auto;
-        // max-width: 350px;
+        &.hxxl {
+          max-width: 500px;
+        }
+        &.hxl {
+          max-width: 454px;
+        }
       }
       .banner__text {
         font-family: pr;
@@ -44,21 +29,29 @@
       }
     }
   }
-  @media screen and (max-width: 767.98px) {
-    &.banner--small {
-      .banner__content {
-        .textbox {
-          h2 {
-            max-width: 240px;
+  @media screen and (max-width: 991.98px) {
+    .banner__content {
+      .textbox {
+        h2 {
+          &.hxl {
+            max-width: 440px;
           }
         }
       }
     }
-    &.banner--medium {
-      .banner__content {
-        .textbox {
-          h2 {
+  }
+  @media screen and (max-width: 767.98px) {
+    .banner__content {
+      .textbox {
+        h2 {
+          &.hxxl {
+            max-width: 420px;
+          }
+          &.hxl {
             max-width: 300px;
+          }
+          &.h0 {
+            max-width: 240px;
           }
         }
       }

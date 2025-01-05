@@ -3,10 +3,26 @@
   background-color: var(--white-cl);
   max-width: var(--max-width-container-fluid);
 }
+.header__inline-menu {
+  display: flex;
+  align-items: center;
+}
+.header__inline-menu .list-menu li:not(:last-child) {
+  padding-right: 2rem;
+}
+.header__inline-menu .list-menu li:not(:last-child) .list-menu__item span {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+}
 .header__heading-link .h2 {
   font-size: 3.2rem;
-  line-height: 2.4rem;
+  line-height: 2.5rem;
   color: var(--black-cl);
   font-family: lm;
   text-transform: uppercase;
+}
+@media screen and (max-width: 991.98px) {
+  .header__inline-menu {
+    display: none;
+  }
 }

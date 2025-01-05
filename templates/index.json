@@ -38,15 +38,7 @@
           }
         }
       },
-<<<<<<< HEAD
       "block_order": ["heading", "button"],
-=======
-      "block_order": [
-        "heading",
-        "text_YxEzyn",
-        "button"
-      ],
->>>>>>> 5e7c4586af7026c022c703ea49eeea16234cb1e4
       "settings": {
         "image": "shopify://shop_images/hero.jpg",
         "image_2": "shopify://shop_images/hero-mob.jpg",
@@ -312,8 +304,6 @@
         "padding_bottom": 95
       }
     },
-<<<<<<< HEAD
-=======
     "image_banner_pVdwcw": {
       "type": "image-banner",
       "blocks": {
@@ -332,10 +322,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_3H7Pmp",
-        "text_CEaCzg"
-      ],
+      "block_order": ["heading_3H7Pmp", "text_CEaCzg"],
       "settings": {
         "image": "shopify://shop_images/banner_5e479acb-a410-4af8-bd41-0799cc7524cd.jpg",
         "image_2": "shopify://shop_images/banner-mob.jpg",
@@ -351,7 +338,6 @@
         "show_text_below": false
       }
     },
->>>>>>> 5e7c4586af7026c022c703ea49eeea16234cb1e4
     "section_contact_EECqiW": {
       "type": "section-contact",
       "settings": {
@@ -380,10 +366,7 @@
     "contact_form_fd6kk3",
     "featured_blog_gCq3RW",
     "section_accordion_YWDWmG",
-<<<<<<< HEAD
-=======
     "image_banner_pVdwcw",
->>>>>>> 5e7c4586af7026c022c703ea49eeea16234cb1e4
     "section_contact_EECqiW"
   ]
 }

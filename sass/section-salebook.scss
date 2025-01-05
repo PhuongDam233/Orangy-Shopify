@@ -11,15 +11,17 @@
     overflow: hidden;
     aspect-ratio: 420/560;
     position: relative;
+    img{
+      width: 100%;
+    }
     &:nth-child(2) {
-      padding: 32px 0px;
-      background-color: var(--brown-cl);
       color: var(--white-cl);
       text-align: center;
     }
     &-top {
       width: 100%;
       position: absolute;
+      padding-top: 32px;
       span {
         font-family: pm;
         text-transform: uppercase;

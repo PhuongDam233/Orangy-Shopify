@@ -46,6 +46,7 @@
   .list-menu--inline {
     display: inline-flex;
     flex-wrap: wrap;
+    padding-left: 21px;
   }
 
   summary.list-menu__item {
@@ -55,14 +56,15 @@
   .list-menu__item {
     display: flex;
     align-items: center;
-    line-height: calc(1 + 0.3 / var(--font-body-scale));
+    line-height: calc(1 + 0.3 / var(--lh-body));
+    height: 100%;
   }
 
   .list-menu__item--link {
     text-decoration: none;
     padding-bottom: 1rem;
     padding-top: 1rem;
-    line-height: calc(1 + 0.8 / var(--font-body-scale));
+    line-height: calc(1 + 0.8 / var(--lh-body));
   }
 
   @media screen and (min-width: 750px) {
@@ -152,8 +154,6 @@
                   preload: true
                 }}
               </div>
-            {%- else -%}
-              <span class="h2">orangy</span>
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
@@ -192,8 +192,6 @@
                   preload: true
                 }}
               </div>
-            {%- else -%}
-              <span class="h2">orangy</span>
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
@@ -640,6 +638,7 @@
     {
       "type": "@app"
     }
+   
   ]
 }
 {% endschema %}

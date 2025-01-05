@@ -15,7 +15,7 @@
   }
    .breadcrumbs__item a {
   color: var(--black-cl);
-  font-size: var(--fs-body-s);
+  font-size: 1.35rem;
   line-height: var(--lh-body);
    }
 
@@ -43,7 +43,7 @@
 {%- unless template == 'index' or template == 'cart' or template == '404' -%}
 {%- assign t = template | split: '.' | first -%}
 <div class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-  <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
+  <nav class="breadcrumbs  {{ section.settings.heading_alignment }} " role="navigation" aria-label="breadcrumbs">
     <ol class="breadcrumbs__list">
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link" href="/">Home</a>
@@ -54,11 +54,9 @@
             <a class="breadcrumbs__link" href="{{ page.url }}" aria-current="page">{{ page.title }}</a>
           </li>
         {%- when 'product' -%}
-          {%- if collection.url -%}
-            <li class="breadcrumbs__item">
-              {{ collection.title | link_to: collection.url }}
-            </li>
-          {%- endif -%}
+           <li class="breadcrumbs__item">
+            {{  product.collections.last.title | link_to:  product.collections.last.url }}
+          </li>
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
           </li>
@@ -104,7 +102,26 @@
 {
   "name": "Breacrumb Navigation ",
   "class": "section",
-  "settings": [],
+  "settings": [{
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "t:sections.collapsible_content.settings.heading_alignment.label",
+      "options": [
+        {
+          "value": "left-block",
+          "label": "t:sections.collapsible_content.settings.heading_alignment.options__1.label"
+        },
+        {
+          "value": "center-block",
+          "label": "t:sections.collapsible_content.settings.heading_alignment.options__2.label"
+        },
+        {
+          "value": "right-block",
+          "label": "t:sections.collapsible_content.settings.heading_alignment.options__3.label"
+        }
+      ],
+      "default": "left-block"
+    }],
   "presets": [
     {
       "name": "Breadcrumbs Navigation"

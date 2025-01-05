@@ -37,9 +37,6 @@
         "padding_bottom": 0
       }
     },
-<<<<<<< HEAD
-    "section_contact_r6bhYP": {
-=======
     "image_banner_mza4C6": {
       "type": "image-banner",
       "blocks": {
@@ -145,7 +142,6 @@
       }
     },
     "section_contact_qrMGDX": {
->>>>>>> 5e7c4586af7026c022c703ea49eeea16234cb1e4
       "type": "section-contact",
       "settings": {
         "background": "#f6f2ee",
@@ -164,9 +160,6 @@
       }
     }
   },
-<<<<<<< HEAD
-  "order": ["banner", "product-grid", "section_contact_r6bhYP"]
-=======
   "order": [
     "banner",
     "product-grid",
@@ -174,5 +167,4 @@
     "multicolumn_EyjiKf",
     "section_contact_qrMGDX"
   ]
->>>>>>> 5e7c4586af7026c022c703ea49eeea16234cb1e4
 }
