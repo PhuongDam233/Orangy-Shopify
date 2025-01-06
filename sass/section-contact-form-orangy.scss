@@ -13,6 +13,9 @@
     margin-left: auto;
   }
   form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     input {
       height: 52px;
     }
@@ -50,6 +53,11 @@
   .contact__button {
     .button {
       width: 100%;
+    }
+  }
+  .contact {
+    form {
+      gap: initial;
     }
   }
 }

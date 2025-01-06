@@ -1,5 +1,4 @@
 .accordion {
-  padding-bottom: 100px;
   .textbox {
     margin-bottom: 60px;
   }
@@ -35,7 +34,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-left: 10px;
+      margin-right: 10px;
       span {
         width: 100%;
         height: 1.5px;
@@ -59,6 +58,7 @@
     overflow: hidden;
     transition: var(--duration);
     &__content {
+      max-width: 692px;
       color: var(--black-cl);
       line-height: var(--lh-body);
       font-size: var(--fs-body);
@@ -68,9 +68,21 @@
 }
 
 @media screen and (max-width: 575.98px) {
-  .question {
-    .icon {
-      width: 13px;
+  .accordion__list-item {
+    .question {
+      .icon {
+        width: 10px;
+      }
+    }
+  }
+  .accordion {
+    .textbox {
+      margin-bottom: 46px;
+      h2 {
+        width: 198px;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
 }

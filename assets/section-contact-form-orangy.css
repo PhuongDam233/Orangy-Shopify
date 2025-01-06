@@ -12,6 +12,11 @@
   margin-right: auto;
   margin-left: auto;
 }
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .contact form input {
   height: 52px;
 }
@@ -46,5 +51,8 @@
 @media screen and (max-width: 575.98px) {
   .contact__button .button {
     width: 100%;
+  }
+  .contact form {
+    gap: initial;
   }
 }

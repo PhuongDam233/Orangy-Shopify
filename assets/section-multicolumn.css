@@ -169,6 +169,11 @@
 .background-none .multicolumn-card__image-wrapper + .multicolumn-card__info {
   padding-top: 2.5rem;
 }
+@media screen and (max-width: 767.98px) {
+  .background-none .multicolumn-card__image-wrapper + .multicolumn-card__info {
+    padding-top: 0rem;
+  }
+}
 
 .background-none .slider .multicolumn-card__info {
   padding-left: 0.5rem;

@@ -7,8 +7,8 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.85 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0 | round: 0 }}px;
   }
 
   @media screen and (min-width: 750px) {
@@ -311,7 +311,7 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
-      "default": 100
+      "default": 0
     }
   ],
   "presets": [

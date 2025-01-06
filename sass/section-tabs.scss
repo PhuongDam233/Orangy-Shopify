@@ -128,7 +128,6 @@
     .collection__title {
       flex-direction: column;
       text-align: center;
-      padding-bottom: 32px;
       .shopify-tabs {
         margin-left: auto;
         margin-right: auto;
@@ -139,8 +138,16 @@
     }
   }
   @media screen and (max-width: 575.98px) {
+    padding-top: 60px;
     .collection__title {
+      .title {
+        &:not(:only-child) {
+          margin-bottom: 3.4rem;
+        }
+      }
+
       .shopify-tabs {
+        max-width: 384px;
         gap: 24px;
         margin-left: calc(var(--gap) * -1);
         margin-right: calc(var(--gap) * -1);

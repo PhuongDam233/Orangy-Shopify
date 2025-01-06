@@ -7,4 +7,20 @@
   .multicolumn-list .multicolumn-list__item {
     width: 100%;
   }
+  .multicolumn-list .multicolumn-list__item .multicolumn-card {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .multicolumn-list .multicolumn-list__item .multicolumn-card .multicolumn-card__image-wrapper {
+    width: 40px;
+  }
+  .multicolumn-list .multicolumn-list__item .multicolumn-card .multicolumn-card__image-wrapper .media {
+    width: 40px;
+  }
+  .multicolumn-list .multicolumn-list__item .multicolumn-card .multicolumn-card__image-wrapper .media img {
+    width: 40px;
+    height: 40px;
+  }
 }

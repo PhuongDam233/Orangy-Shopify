@@ -123,7 +123,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (max-width: 991.98px) {
   .page-width {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
   }
   /* .header:not(.drawer-menu).page-width {
     padding-left: 5rem;
@@ -132,7 +132,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
   .page-width--narrow {
     max-width: 72.6rem;
-    padding: 0;
+    /* padding: 0; */
   }
 
   .page-width-desktop {
@@ -924,7 +924,7 @@ summary::-webkit-details-marker {
 }
 
 .title-wrapper--no-top-margin {
-  margin-top: 0;
+  margin-top: -5px;
 }
 
 .title-wrapper--no-top-margin > .title {
@@ -1126,7 +1126,7 @@ summary::-webkit-details-marker {
   }
 
   .grid--peek.slider .grid__item:first-of-type {
-    margin-left: 1.5rem;
+    margin-left: 0.5rem;
   }
 
   /* Fix to show some space at the end of our sliders in all browsers */
@@ -1901,8 +1901,13 @@ details[open] > .share-button__fallback {
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
-  min-height: 10rem;
+  min-height: 18rem;
   resize: none;
+}
+@media screen and (max-width: 767.98px) {
+  .text-area {
+    min-height: 20.4rem;
+  }
 }
 
 input[type="checkbox"] {
@@ -2292,12 +2297,12 @@ input[type="checkbox"] {
 }
 
 .announcement-bar .slider-button--next {
-  margin-right: -1.5rem;
+  /* margin-right: -1.5rem; */
   min-width: 44px;
 }
 
 .announcement-bar .slider-button--prev {
-  margin-left: -1.5rem;
+  /* margin-left: -1.5rem; */
   min-width: 44px;
 }
 
@@ -2568,8 +2573,15 @@ input[type="checkbox"] {
 }
 
 .header__heading-logo {
-  height: auto;
+  height: 24px;
   max-width: 100%;
+  width: 137px;
+}
+
+@media screen and (max-width: 991.98px) {
+  .header__heading-logo {
+    width: 127px;
+  }
 }
 
 .header__heading-logo-wrapper {
@@ -2625,6 +2637,12 @@ input[type="checkbox"] {
   grid-area: icons;
   justify-self: end;
   padding-right: 27px;
+}
+
+@media screen and (max-width: 991.98px) {
+  .header__icons {
+    padding-right: 8px;
+  }
 }
 
 .header__icons .shopify-app-block {
@@ -3955,6 +3973,9 @@ details-disclosure > details {
 
     --fs-h3-s: 1.568rem;
     --lh-h3-s: 2.56rem;
+
+    --fs-h3-l: 2rem;
+    --lh-h3-l: 3.04rem;
 
     --fs-popup: 3.2rem;
     --lh-popup: 4.2rem;

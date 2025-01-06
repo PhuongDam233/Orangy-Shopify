@@ -18,7 +18,7 @@
   @media screen and (max-width: 575.98px) {
     .slider--tablet.grid--peek.grid--1-col-tablet-down .grid__item,
     .slider--mobile.grid--peek.grid--1-col-tablet-down .grid__item {
-      width: calc(100% - var(--grid-mobile-horizontal-spacing) - 18rem);
+      width: calc(100% - var(--grid-mobile-horizontal-spacing) - 10.1rem);
     }
   }
 }

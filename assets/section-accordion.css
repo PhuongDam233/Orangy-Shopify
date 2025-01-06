@@ -1,6 +1,3 @@
-.accordion {
-  padding-bottom: 100px;
-}
 .accordion .textbox {
   margin-bottom: 60px;
 }
@@ -34,7 +31,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 .accordion__list-item .question .icon span {
   width: 100%;
@@ -58,6 +55,7 @@
   transition: var(--duration);
 }
 .accordion__list-item .answer__content {
+  max-width: 692px;
   color: var(--black-cl);
   line-height: var(--lh-body);
   font-size: var(--fs-body);
@@ -65,7 +63,15 @@
 }
 
 @media screen and (max-width: 575.98px) {
-  .question .icon {
-    width: 13px;
+  .accordion__list-item .question .icon {
+    width: 10px;
+  }
+  .accordion .textbox {
+    margin-bottom: 46px;
+  }
+  .accordion .textbox h2 {
+    width: 198px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

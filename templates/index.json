@@ -230,7 +230,7 @@
         "heading": "Contact us to order and receive purchase advice",
         "heading_size": "h1",
         "color_scheme": "",
-        "padding_top": 100,
+        "padding_top": 114,
         "padding_bottom": 100
       }
     },
@@ -248,7 +248,7 @@
         "show_author": false,
         "show_view_all": true,
         "padding_top": 100,
-        "padding_bottom": 100
+        "padding_bottom": 0
       }
     },
     "section_accordion_YWDWmG": {
@@ -298,10 +298,10 @@
         "faq_pDtYWP"
       ],
       "settings": {
-        "heading-title": "FAQ on Design & Development",
+        "heading-title": "Discover more in our FAQs",
         "heading_alignment": "center",
         "padding_top": 55,
-        "padding_bottom": 95
+        "padding_bottom": 60
       }
     },
     "image_banner_pVdwcw": {
@@ -311,7 +311,7 @@
           "type": "heading",
           "settings": {
             "heading": "Elevate Your Home",
-            "heading_size": "hxl"
+            "heading_size": "h0"
           }
         },
         "text_CEaCzg": {

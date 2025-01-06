@@ -52,7 +52,7 @@
 
 @media screen and (max-width: 1199.98px) {
   .container {
-    gap: 24px;
+    gap: 16px;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -61,6 +61,8 @@
   }
   .scsalebook {
     padding-bottom: 48px;
-    padding-top: 28px;
+  }
+  .scsalebook__img-bottom .content {
+    max-width: 210px;
   }
 }

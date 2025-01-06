@@ -12,11 +12,7 @@
     letter-spacing: var(--ls);
     font-family: pr;
   }
-  .slider-buttons {
-    .slider-button {
-      // display: none;
-    }
-  }
+
   .announcement-inner {
     height: var(--height-announcement-bar);
     .grid__item {
@@ -46,11 +42,6 @@
       .number {
         width: 100%;
         order: 2;
-      }
-    }
-    .slider-buttons {
-      .slider-button {
-        // display: initial;
       }
     }
     .announcement-inner {
