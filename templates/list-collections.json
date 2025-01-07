@@ -9,6 +9,12 @@
  */
 {
   "sections": {
+    "section_breadcrumbs_YU9pef": {
+      "type": "section-breadcrumbs",
+      "settings": {
+        "heading_alignment": "left-block"
+      }
+    },
     "main": {
       "type": "main-list-collections",
       "settings": {
@@ -21,6 +27,7 @@
     }
   },
   "order": [
+    "section_breadcrumbs_YU9pef",
     "main"
   ]
 }
