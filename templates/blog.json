@@ -9,6 +9,84 @@
  */
 {
   "sections": {
+    "section_breadcrumbs_33xRUq": {
+      "type": "section-breadcrumbs",
+      "settings": {
+        "heading_alignment": "left-block"
+      }
+    },
+    "rich_text_KjeUcK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_W9PLAx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Blog",
+            "heading_size": "hxl"
+          }
+        }
+      },
+      "block_order": [
+        "heading_W9PLAx"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_trrkbR": {
+      "type": "image-banner",
+      "blocks": {
+        "text_UL77V6": {
+          "type": "text",
+          "settings": {
+            "text": "June 20, 2024",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "heading_AwDEt6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Furniture That Hides Clutter",
+            "heading_size": "h1"
+          }
+        },
+        "buttons_MXc8L6": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Learn more",
+            "button_link_1": "shopify://blogs/all-posts",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_UL77V6",
+        "heading_AwDEt6",
+        "buttons_MXc8L6"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/abanner-blog.jpg",
+        "image_2": "shopify://shop_images/Link_-_Furniture_That_Hides_Clutter.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
@@ -18,7 +96,7 @@
         "image_height": "medium",
         "show_date": true,
         "show_author": false,
-        "padding_top": 100,
+        "padding_top": 48,
         "padding_bottom": 100
       }
     },
@@ -42,6 +120,9 @@
     }
   },
   "order": [
+    "section_breadcrumbs_33xRUq",
+    "rich_text_KjeUcK",
+    "image_banner_trrkbR",
     "main",
     "section_contact_iTekhq"
   ]

@@ -9,6 +9,12 @@
  */
 {
   "sections": {
+    "section_breadcrumbs_UtYn6k": {
+      "type": "section-breadcrumbs",
+      "settings": {
+        "heading_alignment": "left-block"
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -158,6 +164,7 @@
     }
   },
   "order": [
+    "section_breadcrumbs_UtYn6k",
     "banner",
     "product-grid",
     "image_banner_mza4C6",

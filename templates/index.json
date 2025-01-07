@@ -19,7 +19,7 @@
             "heading_size": "hxxl"
           }
         },
-        "text_YxEzyn": {
+        "text_M8gVQK": {
           "type": "text",
           "settings": {
             "text": "Clever products for every corner",
@@ -38,7 +38,11 @@
           }
         }
       },
-      "block_order": ["heading", "button"],
+      "block_order": [
+        "heading",
+        "text_M8gVQK",
+        "button"
+      ],
       "settings": {
         "image": "shopify://shop_images/hero.jpg",
         "image_2": "shopify://shop_images/hero-mob.jpg",
@@ -221,7 +225,11 @@
           }
         }
       },
-      "block_order": ["item_img_8JmhqW", "item_main_4ggXA9", "item_img_ypqfcW"],
+      "block_order": [
+        "item_img_8JmhqW",
+        "item_main_4ggXA9",
+        "item_img_ypqfcW"
+      ],
       "settings": {}
     },
     "contact_form_fd6kk3": {
@@ -322,7 +330,10 @@
           }
         }
       },
-      "block_order": ["heading_3H7Pmp", "text_CEaCzg"],
+      "block_order": [
+        "heading_3H7Pmp",
+        "text_CEaCzg"
+      ],
       "settings": {
         "image": "shopify://shop_images/banner_5e479acb-a410-4af8-bd41-0799cc7524cd.jpg",
         "image_2": "shopify://shop_images/banner-mob.jpg",
