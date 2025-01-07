@@ -1,9 +1,12 @@
+.main-blog {
+  --gap: 75px;
+}
 .main-blog .blog-filter .list-group .tag-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  margin-bottom: 45px;
+  gap: var(--gap);
+  margin-bottom: 37px;
 }
 .main-blog .blog-filter .list-group .tag-list li {
   cursor: pointer;
@@ -66,6 +69,11 @@
   font-size: 1.5rem;
   line-height: 2.4rem;
   text-transform: uppercase;
+}
+@media screen and (max-width: 1199.98px) {
+  .main-blog {
+    --gap: 40px;
+  }
 }
 @media screen and (max-width: 575.98px) {
   .main-blog .blog-filter .list-group .tag-list {
