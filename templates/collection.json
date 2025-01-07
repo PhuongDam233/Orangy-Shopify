@@ -33,7 +33,7 @@
         "filter_type": "horizontal",
         "enable_sorting": true,
         "columns_mobile": "2",
-        "padding_top": 36,
+        "padding_top": 17,
         "padding_bottom": 0
       }
     },
@@ -55,10 +55,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_EPMQ9D",
-        "text_Fpm8H4"
-      ],
+      "block_order": ["heading_EPMQ9D", "text_Fpm8H4"],
       "settings": {
         "image": "shopify://shop_images/banner_5e479acb-a410-4af8-bd41-0799cc7524cd.jpg",
         "image_2": "shopify://shop_images/banner-mob.jpg",

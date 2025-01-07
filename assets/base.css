@@ -276,7 +276,7 @@ h5,
 } */
 .h1-collection {
   font-size: var(--fs-h1-collection);
-  line-height: var(--lh1-h1-collection);
+  line-height: var(--lh-h1-collection);
 }
 .h2 {
   font-size: var(--fs-h2);
@@ -347,8 +347,8 @@ h5,
 h1,
 .h1 {
   /* font-size: calc(var(--font-heading-scale) * 3rem); */
-  font-size: var(--fs-h3);
-  line-height: var(--lh-h3);
+  font-size: var(--fs-text-banner-small);
+  line-height: var(--lh-text-banner-small);
 }
 
 /* @media only screen and (min-width: 750px) {
@@ -392,9 +392,9 @@ h4,
   font-style: var(--font-heading-style);
   font-size: calc(var(--font-heading-scale) * 1.5rem);
 }
-*/ h5,
 .h5 {
-  font-size: calc(var(--font-heading-scale) * 1.2rem);
+  font-size: var(--fs-h4);
+  line-height: var(--lh-h4);
 }
 
 /* @media only screen and (min-width: 750px) {
@@ -867,7 +867,7 @@ summary::-webkit-details-marker {
 }
 
 .title--primary {
-  margin: 4rem 0;
+  margin: 5rem 0;
 }
 
 .title-wrapper--self-padded-tablet-down,
@@ -3878,6 +3878,12 @@ details-disclosure > details {
   --fs-h3-s: 2rem;
   --lh-h3-s: 3.2rem;
 
+  --fs-text-banner-small: 3.438rem;
+  --lh-text-banner-small: 4.8rem;
+
+  --fs-h4: 1.65rem;
+  --lh-h4: 2.5rem;
+
   --fs-popup: 3.6rem;
   --lh-popup: 5.2rem;
 
@@ -3976,6 +3982,12 @@ details-disclosure > details {
 
     --fs-h3-l: 2rem;
     --lh-h3-l: 3.04rem;
+
+    --fs-text-banner-small: 2.788rem;
+    --lh-text-banner-small: 3.84rem;
+
+    --fs-h1-collection: 4.5rem;
+    --lh-h1-collection: 6.4rem;
 
     --fs-popup: 3.2rem;
     --lh-popup: 4.2rem;

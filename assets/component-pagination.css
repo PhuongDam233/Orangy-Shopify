@@ -4,7 +4,7 @@
 
 @media screen and (min-width: 990px) {
   .pagination-wrapper {
-    margin-top: 5rem;
+    margin-top: 8rem;
   }
 }
 
@@ -12,6 +12,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 113px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .pagination__list > li {
