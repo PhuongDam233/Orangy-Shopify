@@ -1,5 +1,6 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 {{ 'section-banner.css' | asset_url | stylesheet_tag }}
+{{ 'section-article.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -69,7 +70,7 @@
               {% case block.type %}
                 {%- when 'heading' -%}
                   <h2
-                    class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
+                    class="image-with-text__heading inline-richtext heading {{ block.settings.heading_size }}"
                     {{ block.shopify_attributes }}
                   >
                     {{ block.settings.heading }}
