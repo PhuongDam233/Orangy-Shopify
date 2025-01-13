@@ -526,6 +526,12 @@ table:not([class]) th {
   justify-content: right;
 }
 
+.direction-right{
+  flex-direction: row-reverse;
+}
+.direction-left{
+  flex-direction: row;
+}
 .uppercase {
   text-transform: uppercase;
 }
