@@ -60,7 +60,7 @@
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
           </li>
-        {%- when 'collection' and collection.handle -%}
+        {%- when 'collection' -%}
            <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" href="{{ collection.url }}" aria-current="page">Collection</a>
             </li>
@@ -128,4 +128,13 @@
     }
   ]
 }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- when 'collection' and collection.handle -%}"
+  to: "{%- when 'collection' -%}"
+  position: 1908..1933
+{%- endcomment -%}
